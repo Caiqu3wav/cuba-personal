@@ -1,0 +1,17 @@
+@media screen and (max-width: 648px){
+    nav {
+        margin-left: 0 !important;
+    }
+    
+    nav ul{
+        display: none;
+        visibility: hidden;
+    }
+
+    nav button{
+        visibility: visible;
+        display: block !important;
+        position: relative;
+        right: 30%;
+    }
+}

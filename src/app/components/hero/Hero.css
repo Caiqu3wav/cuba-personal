@@ -1,0 +1,35 @@
+
+.hero-cont{
+    background: url(../../../../public/assets/img/threeherobgcustom.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content1{
+    button{
+        background-color: rgba(47, 248, 20, 0.377);
+    }
+}
+
+.hero-content2{
+    h1{
+        color: rgb(57, 105, 238);
+        width: fit-content;
+        text-shadow: 1px 2px 2.3px rgb(255, 255, 255);
+        font-weight: bold;
+        align-self: center;
+    }
+    h2{
+        color: rgb(116, 201, 123);
+        text-shadow: 1px 2px 5px rgb(189, 232, 252);
+        border-bottom: 3px solid white;
+        border-radius: 15px;
+        width: 390px;
+        align-self: center;
+    }
+    img{
+        border-image: linear-gradient(rgba(160, 160, 160, 0.445),rgba(0, 60, 255, 0.692)) 1/20%;
+        border-radius: 50%;
+    }
+}

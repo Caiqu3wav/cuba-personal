@@ -10,7 +10,11 @@
   font-style: normal;
   color: aliceblue;
   width: 400px;
-  font-size: 30px;
+    }
+    @media screen and (max-width: 904px) {
+        h1{
+            width: fit-content;
+        }
     }
     h2{
         font-family: "Kode Mono", monospace;
@@ -19,7 +23,6 @@
   font-style: normal;
   color: rgb(162, 212, 255);
   width: 400px;
-  font-size: 30px;
     }
     h3{
         font-family: "Kode Mono", monospace;
@@ -28,7 +31,6 @@
   font-style: normal;
   color: rgb(55, 149, 231);
   width: 400px;
-  font-size: 30px;
   text-decoration: underline;
     }
     button{
@@ -37,7 +39,6 @@
   font-weight: bold;
   font-style: normal;
   color: rgb(0, 0, 0);
-  font-size: 20px;
     }
 }
 
@@ -53,5 +54,13 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero-content2{
+        h2{
+         font-size: 20px;
+        }
     }
 }

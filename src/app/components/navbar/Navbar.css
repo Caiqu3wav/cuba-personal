@@ -1,4 +1,4 @@
-@media screen and (max-width: 648px){
+@media screen and (max-width: 684px){
     nav {
         margin-left: 0 !important;
     }
@@ -12,6 +12,49 @@
         visibility: visible;
         display: block !important;
         position: relative;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 588px){
+
+
+    nav button{
+        right: 20%;
+    }
+}
+
+
+@media screen and (max-width: 536px){
+
+
+    nav button{
         right: 30%;
+    }
+}
+
+
+@media screen and (max-width: 580px){
+
+
+    nav button{
+        right: 40%;
+    }
+}
+
+
+@media screen and (max-width: 432px){
+
+
+    nav button{
+        right: 50%;
+    }
+}
+
+@media screen and (max-width: 376px){
+
+
+    nav button{
+        right: 60%;
     }
 }

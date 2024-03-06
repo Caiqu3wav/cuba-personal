@@ -1,14 +1,64 @@
 
 .hero-cont{
     background: url(../../../../public/assets/img/threeherobgcustom.png);
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 941px){
+    .hero-cont{
+    background: url(../../../../public/assets/img/threeherobgcustom.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    
+    .hero-cont{
+        background: url(../../../../public/assets/img/threeherobgdarker.png);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: fit-content; padding-bottom: 20px;
+    }
+
+    .hero-content1{
+       background: rgba(26, 25, 25, 0.63);
+       margin-top: 0;
+       border-radius: 20px;
+    }
+
+    .hero-content2{
+        background: rgba(26, 25, 25, 0.63);
+         border-radius: 20px;
+         height: fit-content;
+         margin-top: 0;
+     }
+    }
+
+    @media screen and (max-width: 668px){
+    
+        .hero-cont{
+            background-position-x: -70px;
+        }
+    }
+    
+    @media screen and (max-width: 602px){
+    
+        .hero-cont{
+            background-position-x: -120px;
+        }
+    }
+    
+
 .hero-content1{
     button{
         background-color: rgba(47, 248, 20, 0.377);
+        border-radius: 20px;
     }
 }
 
@@ -32,4 +82,8 @@
         border-image: linear-gradient(rgba(160, 160, 160, 0.445),rgba(0, 60, 255, 0.692)) 1/20%;
         border-radius: 50%;
     }
+}
+
+.hero-content-chd{
+    justify-content: space-between !important;
 }

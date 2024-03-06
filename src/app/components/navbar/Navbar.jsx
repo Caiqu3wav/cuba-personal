@@ -53,14 +53,14 @@ export default function Navbar() {
     }, [isActive]);
 
     return (
-    <nav className="mr-[30%]">
+    <nav className="mr-[30%] majortwo1:mr-[22%] majorthree:mr-[16%] majorthree1:mr-[7%]">
         <ul className="flex text-xl gap-8 text-white font-semibold">
-            <li>HOME</li>
-            <li>PERSONAL</li>
-            <li>SOBRE</li>
-            <li>CONSULTORIA ONLINE</li>
+            <Link href="/"><li>HOME</li></Link>
+            <Link href="#personal"><li>PERSONAL</li></Link>
+            <Link href="#about"><li>SOBRE</li></Link>
+            <Link href="#consultoria"><li>CONSULTORIA ONLINE</li></Link>
             <button aria-label="Open Menu" onClick={toggleMenu} className="hidden self-center">
-                <GiHamburgerMenu size={60} className="low:size-10" style={{ color: 'purple' }} />
+                <GiHamburgerMenu size={60} style={{ color: 'black' }} />
 </button>
 
                 {isActive && (

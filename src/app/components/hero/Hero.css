@@ -84,6 +84,13 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    .hero-content2 h2{
+        width: 300px;
+        font-size: 25px;
+    }
+}
+
 .hero-content-chd{
     justify-content: space-between !important;
 }

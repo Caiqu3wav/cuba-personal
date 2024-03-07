@@ -5,3 +5,9 @@
 .overlay_about{
     background: rgba(128, 128, 128, 0.562);
 }
+
+@media screen and (max-width: 890px) {
+.personal-bg-cut{
+    margin: 0 auto;
+}
+}

@@ -27,8 +27,9 @@ export default function Hero() {
                 </div>
                 <button className="w-[300px] majorthree:w-[200px] mt-3 py-5 px-5 text-black rounded-2xl majorthree:mr-20 majorthree2:mr-0">SAIBA MAIS</button>
                 </div>
-                <div className="hero-content2 mt-6 majortwo4:mt-36 low:ml-2 low:w-[330px] flex flex-col items-center w-[400px] majortwo3:w-[300px] majorthree2:w-[400px]">
-                    <Image className="w-[190px] rounded-full self-center majortwo3:w-[160px] majortwo4:w-[110px]" src={cubaPic1} alt="cuba personal"/>
+                <div className="hero-content2 mt-6 majortwo4:mt-20 low:ml-2 low:w-[330px] flex flex-col items-center w-[400px] majortwo3:w-[300px] majorthree2:w-[400px]">
+                    <Image className="w-[190px] rounded-full self-center
+                     majortwo1:w-[110px] majortwo3:w-[120px]" src={cubaPic1} alt="cuba personal"/>
                 <h1 className=" majortwo4:text-xl">CONSULTORIA CUBA PERSONAL</h1>
                 <h2 className=" font-semibold">Tranformando seus objetivos em realidade</h2>
                 <p className="text-white majortwo3:text-sm">Treinamento personalizado e flexível, monitorado com feedback em tempo real para resultados

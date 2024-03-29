@@ -24,6 +24,7 @@ const config: Config = {
       'majorthree2': {'max': '772px'},
       'majorfour': {'max': '761px'},
       'majorfour1': {'max': '700px'},
+      'majorfour2': {'max': '680px'},
       'midtw': {'max': '648px'},
       'midtwo': {'max': '553px'},
       'midtwo2': {'max': '538px'},

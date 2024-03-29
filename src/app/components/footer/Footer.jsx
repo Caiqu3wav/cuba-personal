@@ -8,7 +8,7 @@ export default function Footer(){
     
     
     return(
-        <footer className="flex w-full h-[200px] justify-between px-1 border-t-2 border-solid bg-gradient-to-r from-cyan-500 to-blue-700">
+        <footer className="footer flex w-full h-[200px] justify-between px-1 border-t-2 border-solid bg-gradient-to-r from-cyan-500 to-blue-700">
             <div><p>Contato</p>
             <p>Telefone: (12)98135-9114</p>
             <p>Email: rsantosgleidson@gmail.com</p></div>

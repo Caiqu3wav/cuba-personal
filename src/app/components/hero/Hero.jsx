@@ -37,7 +37,7 @@ export default function Hero() {
                 <div className="flex majorfour:flex-col-reverse majorfour:gap-6 w-full justify-between majorfour:justify-center majorfour:items-center">
                 <div className="hero-content1 translate-x-[400px] flex flex-col ml-[100px] majortwo4:mt-[170px] majortwo4:ml-0 majortwo1:ml-[50px] majortwo1-2:ml-0 mt-[280px] text-center 
                  majortwo3.1:w-[300px] majortwo3.1:ml-4 items-center justify-center majorfour:py-3">
-                    <Image src={GymLogo} className="w-[40px]" alt="gym logo"/>
+                    <Image src={GymLogo} className="gymlogo w-[40px]" alt="gym logo"/>
                     <h1 className="text-3xl majorthree1:text-xl">CONSULTORIA ONLINE</h1>
                 <h2 className="text-2xl majorthree1:text-xl">&</h2>
                 <h3 className="text-2xl majorthree1:text-lg ">Acompanhamento personalizado</h3>

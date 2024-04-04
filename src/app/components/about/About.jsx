@@ -9,6 +9,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function About() {
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+
+        let mm = gsap.matchMedia(), breakPoint = 800;
+
+    mm.add(
+      {
+        isDesktop: `(min-width: ${breakPoint}px)`,
+        isMobile: `(max-width: ${breakPoint - 1}px)`,
+        isPad: `(min-height: ${breakPoint - 1}px)`
+      },
+      (context) => {
+      let { isDesktop, isMobile, isPad } = context.conditions;
     
         gsap.to(".overlay_about1", {
           x: 0,
@@ -16,13 +27,13 @@ export default function About() {
           opacity: 1,
           scrollTrigger:{
             trigger: ".about-section",
-            endTrigger: "#planos",
-            start: "top 350",
-            end: "top 500",
+            endTrigger: ".tecnodiv",
+            start: isMobile ? "top 580" : isPad ? 'top 730' : "top 350",
+            end: isMobile ? "top 720" : isPad ? 'top 920' : "top 500",
             scrub: true,
           }
         })
-    
+      })
       })
 
     return(

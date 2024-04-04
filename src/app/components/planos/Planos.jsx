@@ -11,6 +11,18 @@ import Link from "next/link";
 export default function Planos() {
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+
+        let mm = gsap.matchMedia(), breakPoint = 800;
+
+    mm.add(
+      {
+        isDesktop: `(min-width: ${breakPoint}px)`,
+        isMobile: `(max-width: ${breakPoint - 1}px)`,
+        isPad: `(min-height: ${breakPoint - 1}px)`
+      },
+      (context) => {
+      let { isDesktop, isMobile, isPad } = context.conditions;
+      
     
         gsap.to(".lateral-cards", {
           x: 0,
@@ -19,8 +31,8 @@ export default function Planos() {
           scrollTrigger:{
             trigger: "#planos",
             endTrigger: ".footer",
-            start: "top 510",
-            end: "top 590",
+            start: isMobile ? "top 740" : isPad ? 'top 1150' : "top 510",
+            end: isMobile ? "top 920" : isPad ? 'top 1250' : "top 590",
             scrub: true,
           }
         })
@@ -32,11 +44,12 @@ export default function Planos() {
             scrollTrigger:{
               trigger: "#planos",
               endTrigger: ".footer",
-              start: "top 430",
-              end: "top 500",
+              start: isMobile ? "top 700" : isPad ? 'top 1120' : "top 430",
+              end: isMobile ? "top 950" : isPad ? 'top 1250' : "top 500",
               scrub: true,
             }
           })
+        })
       })
     
     return(

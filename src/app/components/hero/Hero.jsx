@@ -46,7 +46,7 @@ export default function Hero() {
                     <Link className="text-3xl text-purple-600" href="https://instagram.com/cuba_personal?utm_source=qr&igshid=MzRlODBiNWFlZA=="><PiInstagramLogoFill/></Link>
                     <Link className="text-3xl text-white" href="mailto:rsantosgleidson@gmail.com"><MdMarkEmailUnread/></Link>
                 </div>
-                <button className="w-[300px] majorthree:w-[200px] mt-3 py-5 px-5 text-black rounded-2xl majorthree:mr-20 majorthree2:mr-0">SAIBA MAIS</button>
+                <Link href="#planos"><button className="w-[300px] majorthree:w-[200px] mt-3 py-5 px-5 text-black rounded-2xl majorthree:mr-20 majorthree2:mr-0">FAÇA PARTE</button></Link>
                 </div>
                 <div className="hero-content2 -translate-x-[400px] mt-6 majortwo4:mt-20 low:ml-2 low:w-[330px] flex flex-col items-center w-[400px] majortwo3:w-[300px] majorthree2:w-[400px]">
                     <Image className="w-[190px] rounded-full self-center

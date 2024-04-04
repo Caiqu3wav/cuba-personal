@@ -1,4 +1,4 @@
-    'use client';
+'use client';
 import Header from '../components/header/Header';
 import './style.css'
 import Image from 'next/image';

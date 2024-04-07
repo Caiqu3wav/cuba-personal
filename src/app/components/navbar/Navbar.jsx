@@ -18,11 +18,11 @@ export default function Navbar() {
         },
         {
             title: 'SOBRE',
-            path: '#sobre',
+            path: '#about',
         },
         {
             title: 'CONSULTORIA',
-            path: '#consultoria',
+            path: '#planos',
         },
     ]
 
@@ -73,7 +73,8 @@ export default function Navbar() {
       )}
 
       <aside
-        className={`transform top-0 left-0 w-64 lowtwo2:w-44 lowthreetwo:w-36 text-white font-extrabold fixed h-full overflow-auto ease-in-out transition-all duration-300 z-[900] ${
+        className={`transform top-0 left-0 w-64 lowtwo2:w-44 lowthreetwo:w-36 text-white bg-blue-700
+         bg-opacity-50 font-extrabold fixed h-full overflow-auto ease-in-out transition-all duration-300 z-[900] ${
           isActive ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -81,7 +82,7 @@ export default function Navbar() {
          {sideList.map(({ title, path }, index) => (
     <Link href={path} key={index}>
         <span className="flex items-center p-4 hover:bg-blue-600 hover:text-black">
-          <span className="border-b-4">{title}</span>
+          <span className="border-b-4 border-green-500">{title}</span>
         </span>
     </Link>
   ))}

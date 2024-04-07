@@ -5,7 +5,7 @@ import TecnofitLogo from '../../../../public/assets/img/tecnofit.png'
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from "react";
-
+import Link from 'next/link'
 export default function Tecnofit() {
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -53,6 +53,8 @@ export default function Tecnofit() {
      border-b-4 border-green-500">APLICATIVO DE TREINO</h1>
     <p>Com exercícios personalisados
          e suas demontrações, além de feedback do personal trainer.</p>
+         <Link href="#planos"><button className="py-2 px-4 rounded-xl bg-green-500 mt-3 text-black hover:bg-blue-600
+          hover:text-white transition-all duration-500">ESCOLHA SEU PLANO</button></Link>
          </div></div>
 <div className="custom-shape-divider-bottom-1712172840 bg-blue-500">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

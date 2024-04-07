@@ -9,7 +9,7 @@ export default function Footer(){
     
     
     return(
-        <footer className="footer flex w-full midfour1:flex-col h-[200px] justify-between px-1 border-t-2 border-solid bg-gradient-to-r from-cyan-500 to-blue-700">
+        <footer className="footer flex w-full midfour1:flex-col h-[200px] midfour1:h-[220px] justify-between px-1 border-t-2 border-solid bg-gradient-to-r from-cyan-500 to-blue-700">
             <div><p>Contato</p>
             <p>Telefone: (12)98135-9114</p>
             <p>Email: rsantosgleidson@gmail.com</p></div>
@@ -21,6 +21,7 @@ export default function Footer(){
                     <Link href="https://instagram.com/cuba_personal?utm_source=qr&igshid=MzRlODBiNWFlZA==" target="_blank"><PiInstagramLogoDuotone color="#ff6666"/></Link>
                     <Link href="mailto:rsantosgleidson@gmail.com" target="_blank"><AiTwotoneMail/></Link>
                 </div>
+                <p className="font-semibold majorthree:text-[11px]">Copyright © 2024 - Todos os direitos reservados.</p>
             </div>
             <div className="flex flex-col gap-2 midfour:hidden"><h1>Redes Sociais</h1>
                 <a href="">Facebook</a>

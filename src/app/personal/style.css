@@ -12,25 +12,3 @@
 .overlay-personal{
     background: rgba(0, 0, 0, 0.666);
 }
-
-.custom-shape-divider-bottom-1711828512 {
-    position: absolute;
-
-    bottom: -80px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1711828512 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 120px;
-}
-
-.custom-shape-divider-bottom-1711828512 .shape-fill {
-    fill: #12127a;
-}

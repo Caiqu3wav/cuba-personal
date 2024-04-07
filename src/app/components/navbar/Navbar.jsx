@@ -56,7 +56,7 @@ export default function Navbar() {
             <Link href="/"><li>HOME</li></Link>
             <Link href="#personal"><li>PERSONAL</li></Link>
             <Link href="#about"><li>SOBRE</li></Link>
-            <Link href="#consultoria"><li>CONSULTORIA ONLINE</li></Link>
+            <Link href="#planos"><li>CONSULTORIA ONLINE</li></Link>
             </ul>
             <button aria-label="Open Menu" onClick={toggleMenu} className="btn-hamburguer hidden ml-[70%] mb-8 midtwo3:ml-[60%] midfour:ml-[50%] low:ml-[37%]">
                 <GiHamburgerMenu size={60} style={{ color: 'black' }} />

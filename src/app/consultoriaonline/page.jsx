@@ -11,6 +11,15 @@ import { BsFillCreditCard2FrontFill } from "react-icons/bs";
 import Link from 'next/link';
 
 export default function Consultoria() {
+    const copyToClipboard = () => {
+        const pixKey = '1298135-9114';
+        navigator.clipboard.writeText(pixKey)
+          .then(() => {
+            alert("Chave copiada para área de transferência!")
+          })
+          .catch((error) => console.error('Erro ao copiar: ', error));
+      };
+
   return (
     <div className='personal-dad w-full overflow-x-hidden'>
     <Header/>       

@@ -72,13 +72,16 @@ midtw:w-[60%]
                 <p className='text-white'>Cartão</p>
             <BsFillCreditCard2FrontFill className='text-orange-600 text-5xl' />
             <p className='text-white'>PIX</p>
-            <FaPix className='text-green-400 text-5xl' /></div>
+            <FaPix className='text-green-400 text-5xl' />
+            <p className='text-white'>Chave Pix: <span className='text-blue-600 cursor-pointer' onClick={copyToClipboard}>(1298135-9114)</span></p>
+            <p className="text-white cursor-pointer" onClick={copyToClipboard}>(Copie e Cole)</p>
+                        </div>
             </div>
             <div className='flex flex-col gap-3'>
             <div className='flex self-center mt-4'>
                 <div className='bg-white rounded-l-lg border-r-2 border-solid w-[110px] midfour:text-[13px] text-wrap'>
                     <p className='text-green-500 text-center'>Consultoria 2 Meses</p></div>
-                    <Link href="https://buy.stripe.com/14k4jmdv846q5mUaEK" className='bg-white rounded-r-lg px-3
+                    <Link href="https://link.mercadopago.com.br/cubapersonal" className='bg-white rounded-r-lg px-3
                      midfour:px-1 flex items-center' target='_blank'>
                         <button className='text-center midfour:text-[13px]'>Link de Pagamento</button>
                 </Link>
@@ -86,7 +89,7 @@ midtw:w-[60%]
                 <div className='flex self-center mt-4'>
                 <div className='bg-white rounded-l-lg border-r-2 border-solid w-[110px] text-wrap midfour:text-[13px]'>
                     <p className='text-green-500 text-center'>Consultoria 3 Meses</p></div>
-                    <Link href="https://buy.stripe.com/5kA8zC1Mq9qK2aI7sz" className='bg-white rounded-r-lg px-3 flex 
+                    <Link href="https://link.mercadopago.com.br/cubapersonal" className='bg-white rounded-r-lg px-3 flex 
                     items-center midfour:px-1' target='_blank'>
                 <button className='text-center midfour:text-[13px]'>Link de Pagamento</button>
                 </Link>

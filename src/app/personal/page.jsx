@@ -2,9 +2,6 @@
 import Header from '../components/header/Header';
 import './style.css'
 import Image from 'next/image';
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useLayoutEffect } from 'react';
 import Footer from '../components/footer/Footer'
 import GymLogo from '../../../public/assets/img/gymlogo.png'
 import Positive from '../../../public/assets/img/verifica.png'
@@ -14,17 +11,15 @@ import { BsFillCreditCard2FrontFill } from "react-icons/bs";
 import Link from 'next/link';
 
 export default function PersonalPg(){
-    useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-
-        gsap.to(".overlay-personal", {
-            x: 0, duration: 2, opacity: 1
-        })
-
-        gsap.to(".training-cards", {
-            x: 0, duration: 2, opacity: 1
-        })
-    })
+    
+    const copyToClipboard = () => {
+        const pixKey = '1298135-9114';
+        navigator.clipboard.writeText(pixKey)
+          .then(() => {
+            alert("Chave copiada para área de transferência!")
+          })
+          .catch((error) => console.error('Erro ao copiar: ', error));
+      };
 
     return(
         <div className='personal-dad w-full overflow-x-hidden'>
@@ -83,7 +78,7 @@ export default function PersonalPg(){
 midtw:w-[60%]
  midtwo4:w-[73%] py-2'><h1 className='self-center border-b-2 border-solid
   border-gray-300 rounded-md text-2xl text-green-600'>COMO FUNCIONA?</h1>
-            <p className='text-white'>Para melhorar seu físico e sua saúde é muito simples! Basta fazer seu pagamento, salvar o comprovante e seguir as
+            <p className='text-white px-2'>Para melhorar seu físico e sua saúde é muito simples! Basta fazer seu pagamento, salvar o comprovante e seguir as
                 instruções para entrar em contato com o <span>
                     <a className='text-blue-400 underline' href="https://wa.me/5512981359114">Personal Trainer.</a>
                 </span> Ele irá te guiar para o começo do seu treinamento.
@@ -95,28 +90,34 @@ midtw:w-[60%]
                 <p className='text-white'>Cartão</p>
             <BsFillCreditCard2FrontFill className='text-orange-600 text-5xl' />
             <p className='text-white'>PIX</p>
-            <FaPix className='text-green-400 text-5xl' /></div>
+            <FaPix className='text-green-400 text-5xl' />
+            <p className='text-white'>Chave Pix: <span className='text-blue-600 cursor-pointer' onClick={copyToClipboard}>(1298135-9114)</span></p>
+            <p className="text-white cursor-pointer" onClick={copyToClipboard}>(Copie e Cole)</p>
+</div>
             </div>
             <div className='flex flex-col gap-3'>
             <div className='flex self-center mt-4'>
                 <div className='bg-white rounded-l-lg border-r-2 border-solid w-[110px] text-wrap'>
                     <p className='text-green-500 text-center'>Personal Mensal 2/semana</p></div>
-                    <Link href="https://buy.stripe.com/7sIdTW2Qu9qKeXueV2" className='bg-white rounded-r-lg pl-3 pr-3 flex items-center' target='_blank'>
-                    <button className='text-center'>Link de Pagamento</button>
+                    <Link href="https://link.mercadopago.com.br/cubapersonal" className='bg-white
+                     rounded-r-lg pl-3 pr-3 flex items-center midfour:px-1' target='_blank'>
+                    <button className='text-center midfour:text-[13px]'>Link de Pagamento</button>
                     </Link>
                 </div>
                 <div className='flex self-center mt-4'>
                 <div className='bg-white rounded-l-lg border-r-2 border-solid w-[110px] text-wrap'>
                     <p className='text-green-500 text-center'>Personal Mensal 3/semana</p></div>
-                    <Link href="https://buy.stripe.com/dR62be62G9qKeXu4gp" className='bg-white rounded-r-lg pl-3 pr-3 flex items-center' target='_blank'>
-                <button className='text-center'>Link de Pagamento</button>
+                    <Link href="https://link.mercadopago.com.br/cubapersonal" className='bg-white 
+                    rounded-r-lg pl-3 pr-3 flex items-center midfour:px-1' target='_blank'>
+                <button className='text-center midfour:text-[13px]'>Link de Pagamento</button>
                     </Link>
                 </div>
                 <div className='flex self-center mt-4'>
                 <div className='bg-white rounded-l-lg border-r-2 border-solid w-[110px] text-wrap'>
                     <p className='text-green-500 text-center'>Personal Mensal 3/semana</p></div>
-                    <Link href="https://buy.stripe.com/14k6ru1Mq0UeeXu14e" className='bg-white rounded-r-lg pl-3 pr-3 flex items-center' target='_blank'>
-                <button className='text-center'>Link de Pagamento</button>
+                    <Link href="https://link.mercadopago.com.br/cubapersonal" className='bg-white 
+                    rounded-r-lg pl-3 pr-3 flex items-center midfour:px-1' target='_blank'>
+                <button className='text-center midfour:text-[13px]'>Link de Pagamento</button>
                    </Link>
                 </div>
                 </div>

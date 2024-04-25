@@ -42,9 +42,11 @@ export default function Hero() {
                 <h2 className="text-2xl majorthree1:text-xl">&</h2>
                 <h3 className="text-2xl majorthree1:text-lg ">Acompanhamento personalizado</h3>
                 <div className="flex gap-2">
-                    <Link className="text-3xl text-green-600" href="https://wa.me/5512981359114"><PiWhatsappLogoDuotone/></Link>
-                    <Link className="text-3xl text-purple-600" href="https://instagram.com/cuba_personal?utm_source=qr&igshid=MzRlODBiNWFlZA=="><PiInstagramLogoFill/></Link>
-                    <Link className="text-3xl text-white" href="mailto:rsantosgleidson@gmail.com"><MdMarkEmailUnread/></Link>
+                    <Link className="text-3xl text-green-600" target='_blank' href="https://wa.me/5512981359114"><PiWhatsappLogoDuotone/></Link>
+                    <Link className="text-3xl text-purple-600" target='_blank'
+                     href="https://instagram.com/cuba_personal?utm_source=qr&igshid=MzRlODBiNWFlZA=="><PiInstagramLogoFill/></Link>
+                    <Link className="text-3xl text-white" target='_blank'
+                     href="mailto:rsantosgleidson@gmail.com"><MdMarkEmailUnread/></Link>
                 </div>
                 <Link href="#planos"><button className="w-[300px] majorthree:w-[200px] mt-3 py-5 px-5 text-black rounded-2xl majorthree:mr-20 majorthree2:mr-0
                 hover:bg-blue-600 hover:text-white transition-all duration-500">FAÇA PARTE</button></Link>

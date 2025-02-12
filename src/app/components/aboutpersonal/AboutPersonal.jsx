@@ -1,5 +1,4 @@
 'use client';
-import "./AboutP.css"
 import Image from "next/image";
 import CubaPic from "../../../../public/assets/img/cubapic.jpg"
 import CubaLogo from "../../../../public/assets/img/cubalogogreen.png"
@@ -36,7 +35,7 @@ export default function AboutPersonal() {
     })
   })
     return (
-      <div className="about-personal flex w-full min-h-[500px] items-center justify-between">
+      <div className="flex w-full min-h-[500px] items-center justify-between">
         <div id="personal" className="personal-right opacity-0 transition-opacity 
           flex flex-col min-h-[500px] pb-4 items-center justify-between">
         <Image src={CubaLogo} className=" w-[450px]" alt="cuba logo" />

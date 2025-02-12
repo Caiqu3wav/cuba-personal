@@ -13,10 +13,12 @@ export default function Home() {
     <main className="overflow-x-hidden">
      <Header/>
      <Hero/>
+     <div className="w-full h-fit bg-gradient-to-b from-black via-red-600 to-blue-900">
      <AboutPersonal/>
       <About/>
       <Tecnofit/>
       <Planos/>
+      </div>
       <ScrollButton/>
       <Footer/>
     </main>

@@ -2,62 +2,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
-.hero-content1 h1{
+.hero-content-h1{
     font-family: "Kode Mono", monospace;
 font-optical-sizing: auto;
-font-weight: 600;
-font-style: normal;
 color: aliceblue;
-width: 400px;
 }
-    @media screen and (max-width: 904px) {
-        .hero-content1 h1{
-            width: fit-content;
-        }
-    }
-
-   .hero-content1 h2{
+   .hero-content-h2{
         font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-optical-sizing: auto; 
   color: rgb(162, 212, 255);
   width: 400px;
     }
-    .hero-content1 h3{
+    .hero-content-h3{
         font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(55, 149, 231);
-  width: 400px;
+  font-optical-sizing: auto; 
   text-decoration: underline;
     }
     .hero-content1 button{
         font-family: "Kode Mono", monospace;
   font-optical-sizing: auto;
   font-weight: bold;
-  font-style: normal;
-  color: rgb(0, 0, 0);
     }
 
 
-.hero-content2 h1{
+.hero-content-h1{
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
 }
     
-.hero-content2 h2{
+.hero-content-h2{
         font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 22px;
+  font-optical-sizing: auto; 
     }
 
 @media screen and (max-width: 400px) {
-    .hero-content2 h2{
+    .hero-content-h2{
         font-size: 20px;
        }
 }

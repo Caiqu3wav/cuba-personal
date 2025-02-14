@@ -1,4 +1,4 @@
-import Header from "../components/header/Header";
+/*import Header from "../components/header/Header";
 import BottomShadowHeader from "../components/bottomshadow/BottomShadow";
 import ContainerDad from "../components/container/ContainerDad";
 import ContainerRep from "../components/container/Container";
@@ -88,4 +88,4 @@ Assim, a escolha inteligente entre essas abordagens molda a jornada digital do s
         <ScrollToTopButton/>
         </main>
     );
-}
+}*/

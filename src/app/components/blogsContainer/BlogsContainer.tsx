@@ -1,6 +1,5 @@
 'use client';
 import Image from "next/image";
-import ActualCodingLogo from "../../../../public/assets/img/actcodlogo.png"
 import { useEffect, useState } from "react";
 import "../container/Container.css";
 import "./BlogsContainer.css"
@@ -54,7 +53,6 @@ const [ordenacao, setOrdenacao] = useState('recentes');
     return(
         <div className="hero-container self-center w-[89%] h-fit lowtwo3:w-[80%] midtwo2:w-[90%] lowtwo:ml-2 flex flex-col pl-3 pr-3 rounded-3xl pb-6 items-center
         justify-center mt-2">
-            <Image src={ActualCodingLogo} className="self-center w-[100px]" alt="actual coding logo"/>
         <div className='grid grid-cols-3 midthree:grid-cols-2 low:grid-cols-1 justify-between gap-6 pb-4 pl-2 pr-2 bg-slate-400 rounded-lg'>
         {blogs.map((blog) => (
     <div key={blog.id} className="flex flex-col items-center justify-center gap-2">

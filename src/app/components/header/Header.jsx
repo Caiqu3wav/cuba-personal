@@ -2,11 +2,12 @@
 import Image from "next/image"
 import "./Header.css";
 import Navbar from "../navbar/Navbar";
-import CubaLogo2 from "../../../../public/assets/img/cubalogowhite.png"
+import CubaLogo from "../../../../public/assets/cubalogo.png"
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { PiWhatsappLogoDuotone, PiInstagramLogoFill } from "react-icons/pi";
+import { PiWhatsappLogoDuotone } from "react-icons/pi";
 import { MdMarkEmailUnread } from 'react-icons/md'
+import IgLogo from '../../../../public/assets/ig.png'
 
 export default function Header(){
     const router = useRouter();
@@ -30,7 +31,7 @@ export default function Header(){
             },
             {
                 title: 'BLOGS',
-                path: '#planos',
+                path: '/blogs',
             },
         ]
 
@@ -40,13 +41,15 @@ export default function Header(){
 
     return(
         <div>
-        <header className="w-full flex items-center justify-center gap-20 h-[85px] bg-gradient-to-b from-red-600 via-blue-950 to-black">
-            <Image src={CubaLogo2} alt="personal logo" onClick={HandleClick} className="w-[56px] cursor-pointer"/>
+        <header className="w-full flex items-center justify-center gap-20 h-[85px] bg-mainColor">
+            <Image src={CubaLogo} alt="personal logo" onClick={HandleClick} className="w-[56px] cursor-pointer"/>
             <Navbar MenuItems={menuItems}/>
             <div className="flex gap-2">
                     <Link className="text-3xl text-green-600" target='_blank' href="https://wa.me/5512981359114"><PiWhatsappLogoDuotone/></Link>
-                    <Link className="text-3xl text-purple-600" target='_blank'
-                     href="https://instagram.com/cuba_personal?utm_source=qr&igshid=MzRlODBiNWFlZA=="><PiInstagramLogoFill/></Link>
+                    <Link className="text-3xl" target='_blank'
+                     href="https://instagram.com/cuba_personal?utm_source=qr&igshid=MzRlODBiNWFlZA==">
+                     <Image className="w-[30px] h-[30px]" src={IgLogo} alt="" />
+                     </Link>
                     <Link className="text-3xl text-white" target='_blank'
                      href="mailto:rsantosgleidson@gmail.com"><MdMarkEmailUnread/></Link>
                 </div>

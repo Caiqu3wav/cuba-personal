@@ -1,15 +1,15 @@
-import { PiWhatsappLogoDuotone } from "react-icons/pi";
-import { PiInstagramLogoDuotone } from "react-icons/pi";
-import { AiTwotoneMail } from "react-icons/ai";
-import Image from "next/image";
-import CubaLogo from '../../../../public/assets/img/cubalogowhite.png'
-import Link from "next/link";
+import { PiWhatsappLogoDuotone } from "react-icons/pi"
+import { PiInstagramLogoDuotone } from "react-icons/pi"
+import { AiTwotoneMail } from "react-icons/ai"
+import Image from "next/image"
+import CubaLogo from '../../../../public/assets/cubalogo.png'
+import Link from "next/link"
 
 export default function Footer(){
     
     
     return(
-        <footer className="footer flex w-full midfour1:flex-col h-[200px] midfour1:h-[220px] justify-between px-1 border-t-2 border-solid bg-gradient-to-r from-cyan-500 to-blue-700">
+        <footer className="footer text-white flex w-full midfour1:flex-col h-[200px] midfour1:h-[220px] justify-between px-1 border-t-2 border-solid bg-gradient-to-r from-mainBlue via-mainRed to-mainColor">
             <div><p>Contato</p>
             <p>Telefone: (12)98135-9114</p>
             <p>Email: rsantosgleidson@gmail.com</p></div>

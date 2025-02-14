@@ -41,8 +41,8 @@ export default function About() {
         <div id="about" className="flex gap-6 majorthree:justify-around">
             <div className="overlay_about1 translate-x-[-300px] translate-y-[100px] opacity-0
  flex flex-col w-[400px] majorthree:w-[35%]  majorthree:z-40">
-                <h1 className="text-green-500 text-2xl border-solid
-                 border-b-2 border-blue-400">Consultoria Online Cuba Personal</h1>
+                <h1 className=" text-2xl border-solid
+                 border-b-2 font-bold border-mainBlue">Consultoria Online Cuba Personal</h1>
                     <p className="text-white midtw:text-[13px] midfour:text-[11px]">Com a crescente busca por soluções fitness e bem-estar
 acessíveis e convenientes,Consultoria Online Cuba Personal
 destaca-se pela opção preferida por muitos que buscam uma
@@ -54,8 +54,8 @@ alcancem seus objetivos de forma flexível e personalizada.
             <Image src={PersonalBgCut} alt="trainer image" className="personal-bg-cut self-center w-[220px] majorthree:absolute"/>
             <div className="overlay_about1 overlay_about2 opacity-0
             translate-x-[300px] translate-y-[100px] flex-col w-[400px] majorthree:w-[35%] majorthree:z-40">
-                <h1 className="text-green-500 text-2xl border-solid
-                 border-b-2 border-blue-400">Propósito e metas</h1>
+                <h1 className=" text-2xl border-solid
+                 border-b-2 border-mainBlue font-bold">Propósito e metas</h1>
                     <p className="text-white midtw:text-[13px] midfour:text-[11px]">Nosso compromisso é criar um programa de treino
 totalmente personalizado para atender às suas necessidades
 específicas. Se você deseja perder peso, ganhar massa muscular,

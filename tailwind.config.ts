@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     
     extend: {
-      mainColors: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: { 
+        "mainColor": "#000000",
+        "mainBlue": "#172554",
+        "mainRed": "#dc2626",
       },
       screens:{
         'major': {'max': '1260px'},

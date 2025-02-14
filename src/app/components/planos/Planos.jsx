@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import Consult from "../../../../public/assets/img/consultoria-online.jpg"
-import Treino from "../../../../public/assets/img/Treino.png"
+import Treino from "../../../../public/assets/img/Treino.webp"
 import BfImg from "../../../../public/assets/img/blackfit.jpg"
 import { useLayoutEffect } from "react";
 import { gsap } from 'gsap';
@@ -53,7 +53,7 @@ export default function Planos() {
       })
     
     return(
-        <div id="planos" className="bg-gradient-to-b pb-4 flex flex-col items-center justify-center w-full from-[#053105] to-[#0cad0c]">
+        <div id="planos" className="pb-4 flex flex-col items-center justify-center w-full">
             <h1 className="text-[40px] font-light text-white">PLANOS</h1>
             <hr className=" border-solid border-blue-600 rounded-lg border-2 border-x-[300px]" />
             <div className="flex justify-around w-full midtwo3:flex-col midtwo3:items-center">
@@ -63,7 +63,7 @@ export default function Planos() {
                     <Image src={Consult} className="transition-all majorthree2:h-[200px] majorfour2:h-[150px] h-[283px] 
                      duration-700 w-full hover:opacity-75 " alt="" />
                     <div className="flex flex-col items-center text-[22px] font-semibold text-white text-center h-[100px]
-                    majorthree2:h-[120px] bg-blue-700 midtwo2:h-[85px] ">
+                    majorthree2:h-[120px] midtwo2:h-[85px] ">
                         <h1 className="midtwo2:text-[14px]">Consultoria Online</h1>
                         <Link className="w-[70%]" href="/consultoriaonline"><button className=" w-[100%] text-[17px] midtwo2:text-[14px] py-2 rounded-lg bg-black text-white transition-all duration-700
                          hover:bg-white hover:text-black text-nowrap">SAIBA MAIS</button></Link>
@@ -74,7 +74,7 @@ export default function Planos() {
                 ">
                     <Image src={Treino} className="transition-all majorthree2:h-[200px] majorfour2:h-[150px] w-full h-[283px] duration-700 hover:opacity-75 " alt="" />
                     <div className="flex flex-col items-center text-[22px] font-semibold text-white 
-                    majorthree2:h-[120px] text-center h-[100px] bg-blue-700 midtwo2:h-[85px]">
+                    majorthree2:h-[120px] text-center h-[100px] midtwo2:h-[85px]">
                         <h1 className="midtwo2:text-[14px]">Personal Trainer</h1>
                         <Link className="w-[70%]" href="/personal"><button className="w-[70%] text-[17px] midtwo2:text-[14px] py-2 rounded-lg bg-black text-white transition-all duration-700
                          hover:bg-white hover:text-black">SAIBA MAIS</button></Link>                   </div>
@@ -84,7 +84,7 @@ export default function Planos() {
                     ">
                     <Image src={BfImg} className="transition-all w-full h-[283px] majorthree2:h-[200px] majorfour2:h-[150px] duration-700 hover:opacity-75 " alt="" />
                     <div className="flex flex-col items-center text-[22px] font-semibold text-white 
-                    majorthree2:h-[120px] text-center h-[100px] bg-blue-700 midtwo2:h-[85px]">
+                    majorthree2:h-[120px] text-center h-[100px] midtwo2:h-[85px]">
                         <h1 className="midtwo2:text-[14px]">Plano BlackFit</h1>
                         <button className="w-[70%] text-[17px] midtwo2:text-[14px] py-2 rounded-lg bg-black text-white transition-all duration-700
                          hover:bg-white hover:text-black">SAIBA MAIS</button>                    </div>

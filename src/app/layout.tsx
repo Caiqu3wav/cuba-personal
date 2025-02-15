@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Cuba Personal",
   description: "Site personal trainer consultoria online",
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({

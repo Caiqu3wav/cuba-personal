@@ -33,7 +33,7 @@ export default function Hero() {
 
                     <h2 className="text-2xl text-red-600 majorthree1:text-xl self-center">Online e Presencial</h2>
                     <h2 className="text-2xl text-red-600 majorthree1:text-xl self-center">&</h2>
-                <h3 className="hero-content-h3 underline text-blue-700 text-2xl majorthree1:text-lg ">Acompanhamento personalizado</h3>
+                <h3 className="hero-content-h3 underline text-blue-700 rounded-lg text-2xl majorthree1:text-lg ">Acompanhamento personalizado</h3>
                 </div>
                 <p className="text-white text-sm majortwo3:text-[12px]">- Transforme seus treinos com a consultoria online de um personal trainer + acompanhamento nutricional:
 - Profissionais qualificados e experientes

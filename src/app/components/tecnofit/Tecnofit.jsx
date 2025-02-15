@@ -52,7 +52,7 @@ export default function Tecnofit() {
   midfour:translate-x-[15%] low:translate-x-[5%]" />
       <div className="flex flex-col gap-2 w-full items-end text-center majorthree2:mt-[150px]
 ">
-        <div className="w-[430px] midfour:w-[360px] opct-tecnofit bg-mainBlue mt-[130px] text-white mr-[10%]
+        <div className="w-[430px] midfour:w-[360px] opct-tecnofit bg-mainBlue  text-white mr-[10%]
      majortwo3.1:mr-[3%] majorthree2:mr-0 majorthree2:self-center">
           <div>
             <div className="flex gap-3 items-center justify-center">

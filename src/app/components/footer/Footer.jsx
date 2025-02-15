@@ -1,5 +1,4 @@
-import { PiWhatsappLogoDuotone } from "react-icons/pi"
-import { PiInstagramLogoDuotone } from "react-icons/pi"
+import { PiWhatsappLogoDuotone, PiInstagramLogoDuotone, PiFacebookLogo } from "react-icons/pi"
 import { AiTwotoneMail } from "react-icons/ai"
 import Image from "next/image"
 import CubaLogo from '../../../../public/assets/cubalogo.png'
@@ -17,15 +16,14 @@ export default function Footer(){
             <div className="flex mr-[6.5rem] midtwo:mr-[2.5rem] midfour:mr-[5rem] midfour1:mr-0 midfour1:self-center midtwo4:mr-0 flex-col gap-1 items-center justify-center">
                 <Image src={CubaLogo} className="w-[80px]" alt="logo cuba" />
                 <div className="flex gap-2 text-[30px]">
-                    <Link href="https://wa.me/5512981359114" target="_blank"><PiWhatsappLogoDuotone color="#00cc00"/></Link>
-                    <Link href="https://instagram.com/cuba_personal?utm_source=qr&igshid=MzRlODBiNWFlZA==" target="_blank"><PiInstagramLogoDuotone color="#ff6666"/></Link>
-                    <Link href="mailto:rsantosgleidson@gmail.com" target="_blank"><AiTwotoneMail/></Link>
+                    
                 </div>
                 <p className="font-semibold majorthree:text-[11px]">Copyright © 2024 - Todos os direitos reservados.</p>
             </div>
             <div className="flex flex-col gap-2 midfour:hidden"><h1>Redes Sociais</h1>
-                <a href="">Facebook</a>
-                <a href="">Instagram</a></div>
+            <Link className="text-xl" href="https://wa.me/5512981359114" target="_blank"><PiWhatsappLogoDuotone color="#00cc00"/></Link>
+                    <Link className="text-xl" href="https://instagram.com/cuba_personal?utm_source=qr&igshid=MzRlODBiNWFlZA==" target="_blank"><PiInstagramLogoDuotone color="#ff6666"/></Link>
+                    <Link className="text-blue-800 text-xl" href="https://www.facebook.com/gleidsond1" target="_blank"><PiFacebookLogo/></Link></div>
         </footer>
     )
 }

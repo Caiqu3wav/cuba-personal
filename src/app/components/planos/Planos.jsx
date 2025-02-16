@@ -9,7 +9,7 @@ import { useLayoutEffect } from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
-import "./planos.css"
+import "../../../styles/planos.css"
 
 export default function Planos() {
   useLayoutEffect(() => {

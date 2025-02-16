@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useEffect, useState } from "react";
-import "./Navbar.css"
 
 interface MenuItem {
     title: string;

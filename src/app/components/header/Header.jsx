@@ -41,16 +41,16 @@ export default function Header(){
 
     return(
         <div>
-        <header className="w-full flex items-center justify-center gap-20 h-[85px] bg-mainColor">
+        <header className="w-full flex items-center justify-between px-2 sm:px-0 sm:justify-evenly h-[85px] bg-mainColor">
             <Image src={CubaLogo} alt="personal logo" onClick={HandleClick} className="w-[56px] cursor-pointer"/>
-            <Navbar MenuItems={menuItems}/>
-            <div className="flex gap-2">
-                    <Link className="text-3xl text-green-600" target='_blank' href="https://wa.me/5512981359114"><PiWhatsappLogoDuotone/></Link>
-                    <Link className="text-3xl" target='_blank'
+            <Navbar MenuItems={menuItems} hamburguerMenuColor="white"/>
+            <div className="flex items-center text-center gap-2">
+                    <Link className="text-2xl sm:text-3xl text-green-600" target='_blank' href="https://wa.me/5512981359114"><PiWhatsappLogoDuotone/></Link>
+                    <Link className="text-2xl sm:text-3xl" target='_blank'
                      href="https://instagram.com/cuba_personal?utm_source=qr&igshid=MzRlODBiNWFlZA==">
-                     <Image className="w-[30px] h-[30px]" src={IgLogo} alt="" />
+                     <Image className="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]" src={IgLogo} alt="" />
                      </Link>
-                    <Link className="text-3xl text-white" target='_blank'
+                    <Link className="text-2xl sm:text-3xl text-white" target='_blank'
                      href="mailto:rsantosgleidson@gmail.com"><MdMarkEmailUnread/></Link>
                 </div>
         </header>

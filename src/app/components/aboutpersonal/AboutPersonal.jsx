@@ -38,10 +38,10 @@ export default function AboutPersonal() {
       <div className="flex w-full min-h-[500px] items-center justify-between">
         <div id="personal" className="personal-right opacity-0 transition-opacity 
           flex flex-col min-h-[500px] pb-4 items-center justify-between">
-        <Image src={CubaLogo} className="w-[100px]" alt="cuba logo" />
+        <Image src={CubaLogo} className="w-[100px] midtwo2:w-[60px]" alt="cuba logo" />
           <div className="overlay-personal-right translate-y-[400px] flex flex-col items-center justify-center w-[70%] midfour:w-[86%]
            rounded-xl py-3">
-            <Image src={CubaPic} className="w-[160px] h-[190px] rounded-[60%] self-center" alt="personal cuba picture"/>
+            <Image src={CubaPic} className="w-[160px] h-[190px] midtwo:w-[120px] midtwo:h-[150px] rounded-[60%] self-center" alt="personal cuba picture"/>
             <h1 className="font-extrabold">Gleidson Roberto dos Santos</h1>
             <h2 className="font-bold text-blue-900">CREF: 126111-G/SP</h2>
             <p className="text-white px-4 midtwo:text-[13px]">Meu nome é Gleidson Roberto dos Santos tenho grande experiência em 

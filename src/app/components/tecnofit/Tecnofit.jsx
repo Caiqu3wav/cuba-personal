@@ -47,25 +47,22 @@ export default function Tecnofit() {
           <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
         </svg>
       </div>
-      <Image src={TecnofitLogo} alt="" className="absolute z-10 opct-tecnofit majorthree:w-[300px]
- majorthree:mt-[60px] majorthree2:translate-x-[50%] majorthree2:-mt-2 midtwo:translate-x-[30%]
-  midfour:translate-x-[15%] low:translate-x-[5%]" />
-      <div className="flex flex-col gap-2 w-full items-end text-center majorthree2:mt-[150px]
-">
-        <div className="w-[430px] midfour:w-[360px] opct-tecnofit bg-mainBlue  text-white mr-[10%]
-     majortwo3.1:mr-[3%] majorthree2:mr-0 majorthree2:self-center">
+      <div className="flex majorthree2:flex-col-reverse majorthree2:gap-2">
+      <Image src={TecnofitLogo} alt="" className="relative w-[560px] z-10 opct-tecnofit majorthree2:w-[150px] majorthree2:self-center midtwo2:w-[120px]" />
+      <div className="flex flex-col gap-2 w-full items-end text-center">
+        <div className="w-[430px] opct-tecnofit bg-mainBlue  text-white majortwo4:mr-2 majorthree2:self-center majorthree2:mr-0">
           <div>
             <div className="flex gap-3 items-center justify-center">
               <Image src={CubaLogo} className="w-[67px]" alt="cuba-logo" />
               <Image src={AllanLogo} className="w-[79px]" alt="cuba-logo" />
             </div>
             <h1 className="btn-shine text-4xl midfour:text-2xl font-semibold border-solid 
-     border-b-4 border-black">CONSULTORIA ONLINE</h1>
+     border-b-4 border-black midtwo2:text-lg">CONSULTORIA ONLINE</h1>
             <p>+</p>
             <h1 className="btn-shine2 text-xl midfour:text-2xl font-semibold border-solid 
-     border-b-4 border-black">ACOMPANHAMENTO NUTRICIONAL</h1>
+     border-b-4 border-black midtwo2:text-base low:text-lg">ACOMPANHAMENTO NUTRICIONAL</h1>
           </div>
-          <ul className="flex mt-2 justify-center flex-col text-start space-y-2">
+          <ul className="flex mt-2 justify-center midtwo2:text-xs midtwo2:ml-4 low:ml-10 flex-col text-start space-y-2">
             <li className="flex items-center gap-2">
               <FaCheckCircle className="text-green-500" /> Avaliação Física
             </li>
@@ -88,7 +85,9 @@ export default function Tecnofit() {
 
           <Link href="#planos"><button className="py-2 px-4 rounded-xl bg-green-500 mt-3 text-black hover:bg-mainBlue
           hover:text-white transition-all duration-500">ESCOLHA SEU PLANO</button></Link>
-        </div></div>
+        </div>
+      </div>
+    </div>
       <div className="custom-shape-divider-bottom-1712172840 bg-mainBlue">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>

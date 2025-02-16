@@ -21,13 +21,13 @@ export default function Hero() {
     })
     return(
         <div>
-        <div className="bg-gif bg-opacity-50 flex flex-col items-center w-full h-[700px] border-b-2 border-gray-400 border-solid">
+        <div className="bg-gif bg-opacity-50 flex flex-col items-center w-full h-[620px] border-b-2 border-gray-400 border-solid">
         <BottomShadow/>
-            <div className="hero-container-chd py-5 bg-black bg-opacity-60 rounded-xl px-3 ml-6 text-white opacity-0 flex items-center justify-center flex-col w-[500px] mr-4">
+            <div className="hero-container-chd py-5 bg-black bg-opacity-60 rounded-xl px-3 ml-6 text-white opacity-0 flex items-center justify-center flex-col
+            w-[500px] midtwo3:w-[400px] low:w-[350px] mr-4">
                 <div className="flex flex-col">
                     <div className="flex flex-col items-center text-center">
-                    <Image className="w-[170px]  rounded-full self-center
-                     majortwo1:w-[80px] majortwo3:w-[50px]" src={cubaPic1} alt="cuba personal"/>
+                    <Image className="w-[170px] midtwo3:w-[120px] midfour1:w-[85px] rounded-full self-center " src={cubaPic1} alt="cuba personal"/>
                     <Image src={GymLogo} className="gymlogo self w-[40px]" alt="gym logo"/>
                     <h1 className="hero-content-h1 underline majortwo4:text-xl">CONSULTORIA CUBA PERSONAL</h1>
 
@@ -41,8 +41,7 @@ export default function Hero() {
 - Feedback semanal
 Conheça nossos planos! Mais informações:
 <a className="underline" href="https://wa.me/5512981359114">(12) 99184-4411</a></p>
-                <Link href="#planos" className="self-center"><button className="w-[300px]  majorthree:w-[200px] mt-3 py-5 px-5 text-white bg-red-600 rounded-2xl majorthree:mr-20 majorthree2:mr-0
-                hover:bg-blue-600 hover:text-black transition-all duration-500">FAÇA PARTE</button></Link>
+                <Link href="#planos" className="self-center"><button className="w-[300px]  majorthree:w-[200px] mt-3 py-5 px-5 text-white bg-red-600 rounded-2xl hover:bg-blue-600 hover:text-black transition-all duration-500">FAÇA PARTE</button></Link>
                 </div>
             </div>
         </div>

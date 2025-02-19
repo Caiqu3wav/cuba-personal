@@ -35,7 +35,7 @@ export default function Planos() {
             trigger: "#planos",
             endTrigger: ".footer",
             start: isMobile ? "top 740" : isPad ? 'top 1150' : "top 510",
-            end: isMobile ? "top 920" : isPad ? 'top 1250' : "top 590",
+            end: isMobile ? "top 870" : isPad ? 'top 1250' : "top 590",
             scrub: true,
           }
         })
@@ -48,7 +48,7 @@ export default function Planos() {
             trigger: "#planos",
             endTrigger: ".footer",
             start: isMobile ? "top 700" : isPad ? 'top 1120' : "top 430",
-            end: isMobile ? "top 950" : isPad ? 'top 1250' : "top 500",
+            end: isMobile ? "top 870" : isPad ? 'top 1250' : "top 500",
             scrub: true,
           }
         })
@@ -63,7 +63,7 @@ export default function Planos() {
       <div className="flex justify-around majorfour1:gap-9 midfour1:gap-11 w-full h-fit majorfour1:px-3 majorfour1:flex-col">
         <div className="lateral-cards planos-cards translate-x-[-300px] translate-y-[-300px] opacity-0 w-[300px] transition-all duration-400 
                 hover:scale-125 cursor-pointer mt-4 rounded-b-[60px] rounded-t-3xl">
-          <Image src={Consult} className="transition-all rounded-md w-full h-[235px] midtwo:w-[170px] midtwo:h-[170px] duration-700  hover:opacity-75" alt="" />
+          <Image src={Consult} className="transition-all rounded-md w-full h-[255px] midtwo:w-[170px] midtwo:h-[170px] duration-700  hover:opacity-75" alt="" />
           <div className="flex flex-col items-center text-[22px] font-semibold text-white text-center h-[100px]
                     majorthree2:h-[120px] midtwo2:h-[85px]">
             <h1 className="flex items-center gap-2"><span className="majorthree:text-sm">Consultoria Online</span> <AiOutlineGlobal className="text-blue-600" /> </h1>
@@ -76,7 +76,7 @@ export default function Planos() {
         </div>
         <div className="center-card planos-cards self-end translate-y-[200px] opacity-0 w-[300px] transition-all duration-400 
                 hover:scale-125 cursor-pointer mt-4 majorfour1:mt-0 rounded-b-[60px] rounded-t-3xl">
-          <Image src={Treino} className="transition-all rounded-md w-full midtwo:w-[170px] midtwo:h-[170px] h-[235px] duration-700 hover:opacity-75" alt="" />
+          <Image src={Treino} className="transition-all rounded-md w-full h-[255px] midtwo:w-[170px] midtwo:h-[170px]  duration-700 hover:opacity-75" alt="" />
           <div className="flex flex-col items-center text-[22px] font-semibold text-white
                     majorthree2:h-[120px] text-center h-[100px] midtwo2:h-[85px]">
             <h1 className="midtwo2:text-[14px] flex items-center gap-2"><span className="majorthree:text-sm">Personal Trainer</span> 
@@ -91,7 +91,7 @@ export default function Planos() {
         </div>
         <div className="lateral-cards planos-cards w-[300px] majorfour1:mt-7 translate-x-[300px] translate-y-[-300px] opacity-0
                       transition-all duration-400 hover:scale-125 cursor-pointer mt-4 rounded-b-[60px] rounded-t-3xl">
-          <Image src={BfImg} className="transition-all rounded-md w-full h-[235px] midtwo:w-[170px] midtwo:h-[170px] duration-700 hover:opacity-75 " alt="" />
+          <Image src={BfImg} className="transition-all rounded-md w-full h-[255px] midtwo:w-[170px] midtwo:h-[170px] duration-700 hover:opacity-75 " alt="" />
           <div className="flex flex-col items-center text-[22px] font-semibold text-white 
                     majorthree2:h-[120px] text-center h-[100px] midtwo2:h-[85px]">
             <h1 className="midtwo2:text-[14px] majorthree:text-sm">Plano BlackFit ⭐</h1>

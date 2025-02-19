@@ -48,9 +48,9 @@ export default function Tecnofit() {
         </svg>
       </div>
       <div className="flex majorthree2:flex-col-reverse majorthree2:gap-2">
-      <Image src={TecnofitLogo} alt="" className="relative w-[560px] z-10 opct-tecnofit majorthree2:w-[150px] majorthree2:self-center midtwo2:w-[120px]" />
+      <Image src={TecnofitLogo} alt="" className="relative w-[560px] z-10 opct-tecnofit majorthree2:w-[170px] majorthree2:self-center midtwo2:w-[120px]" />
       <div className="flex flex-col gap-2 w-full items-end text-center">
-        <div className="w-[430px] opct-tecnofit bg-mainBlue  text-white majortwo4:mr-2 majorthree2:self-center majorthree2:mr-0">
+        <div className="w-[430px] mr-[15%] opct-tecnofit bg-mainBlue  text-white majortwo4:mr-4 majorthree2:self-center majorthree2:mr-0">
           <div>
             <div className="flex gap-3 items-center justify-center">
               <Image src={CubaLogo} className="w-[67px]" alt="cuba-logo" />

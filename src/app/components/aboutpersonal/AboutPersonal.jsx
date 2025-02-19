@@ -5,6 +5,7 @@ import CubaLogo from "../../../../public/assets/cubalogo.png"
 import { useLayoutEffect } from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaMapLocationDot } from "react-icons/fa6";
 
 export default function AboutPersonal() {
 
@@ -42,8 +43,9 @@ export default function AboutPersonal() {
           <div className="overlay-personal-right translate-y-[400px] flex flex-col items-center justify-center w-[70%] midfour:w-[86%]
            rounded-xl py-3">
             <Image src={CubaPic} className="w-[160px] h-[190px] midtwo:w-[120px] midtwo:h-[150px] rounded-[60%] self-center" alt="personal cuba picture"/>
-            <h1 className="font-extrabold">Gleidson Roberto dos Santos</h1>
-            <h2 className="font-bold text-blue-900">CREF: 126111-G/SP</h2>
+            <h1 className="font-extrabold text-slate-600 border-solid border-b-2 rounded-lg ">Gleidson Roberto dos Santos</h1>
+            <h2 className="flex gap-2 items-center text-mainRed"><span className="text-mainRed">Guaratinguetá - SP</span> <FaMapLocationDot className="text-mainRed" size={30} /> </h2>
+            <h3 className="font-bold text-blue-900">CREF: 126111-G/SP</h3>
             <p className="text-white px-4 midtwo:text-[13px]">Meu nome é Gleidson Roberto dos Santos tenho grande experiência em 
             treinamento esportivo sou natural do Brasil
               Estado de São Paulo ganhei uma Bolsa de Estudos em 2005 concluí os estudos em 2011 em Cuba onde me dediquei à formação

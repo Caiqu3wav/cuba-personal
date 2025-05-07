@@ -41,7 +41,8 @@ export default function Header(){
 
     return(
         <div>
-        <header className="w-full flex items-center justify-between px-2 sm:px-0 sm:justify-evenly h-[85px] bg-mainColor">
+        <header className="w-full fixed top-0 z-50 flex items-center justify-between px-2 sm:px-0 sm:justify-evenly h-[85px] bg-gradient-to-b from-mainColor
+        to-transparent">
             <Image src={CubaLogo} alt="personal logo" onClick={HandleClick} className="w-[56px] cursor-pointer"/>
             <Navbar MenuItems={menuItems} hamburguerMenuColor="white"/>
             <div className="flex items-center text-center gap-2">

@@ -2,20 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
-
 html{
   scroll-behavior: smooth;
 }
 
 body{
   background-color: black;
-}
-
-*{
-    font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 .gymlogo {

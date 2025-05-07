@@ -43,7 +43,7 @@ const Blogs = () => {
                   </span>
                   <span className="flex items-center gap-1">
                     <User size={14} />
-                    {blog.author}
+                    {blog.author.nome}
                   </span>
                 </CardDescription>
               </CardHeader>

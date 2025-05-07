@@ -2,7 +2,7 @@ import { Button } from "@/app/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/app/components/ui/card";
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/app/components/ui/pagination";
 import { Calendar, User, Dumbbell } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { blogs } from "@/data/blogs";
 
 const BlogSection = () => {
@@ -33,7 +33,7 @@ const BlogSection = () => {
                 
                 <CardHeader>
                   <CardTitle className="hover:text-cuba-red transition-colors">
-                    <Link to={`/blog/${blog.id}`}>{blog.title}</Link>
+                    <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
                   </CardTitle>
                   <CardDescription className="flex items-center gap-4 text-sm">
                     <span className="flex items-center gap-1">
@@ -42,7 +42,7 @@ const BlogSection = () => {
                     </span>
                     <span className="flex items-center gap-1">
                       <User size={14} />
-                      {blog.author}
+                      {blog.author.nome}
                     </span>
                   </CardDescription>
                 </CardHeader>
@@ -53,7 +53,7 @@ const BlogSection = () => {
                 
                 <CardFooter>
                   <Button variant="link" className="text-cuba-red p-0 hover:text-red-700">
-                    <Link to={`/blog/${blog.id}`} className="flex items-center gap-2">
+                    <Link href={`/blog/${blog.id}`} className="flex items-center gap-2">
                       Ler mais <span className="text-lg">→</span>
                     </Link>
                   </Button>

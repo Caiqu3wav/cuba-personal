@@ -3,16 +3,18 @@ import { useParams } from "next/navigation";
 import Link from 'next/link'
 import { Button } from "@/app/components/ui/button";
 import { blogs } from "@/data/blogs";
-import { ArrowLeft, Calendar, User, Share2, Heart, Bookmark, Dumbbell } from "lucide-react";
+import { ArrowLeft, Calendar, Share2, Bookmark, Dumbbell } from "lucide-react";
+import Header from '@/app/components/header/Header'
 
 const BlogPage = () => {
-  const { blogId } = useParams<{ blogId: string }>();
-  const id = parseInt(blogId || "1");
+  const params = useParams();
+  const blogId = params?.id as string;
+  const id = Number(blogId);
   const blog = blogs.find(b => b.id === id);
 
   if (!blog) {
     return (
-      <div className="container mx-auto px-4 py-24 text-center">
+      <div className="container bg-red-600 mx-auto px-4 py-24 text-center">
         <h1 className="text-3xl font-bold mb-6">Artigo não encontrado</h1>
         <Button asChild className="bg-cuba-red hover:bg-red-700 text-white">
           <Link href="/#blog">Voltar para Blog</Link>
@@ -23,15 +25,15 @@ const BlogPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-900 to-white">
-      {/* Header Image */}
-      <div className="relative h-[40vh] md:h-[50vh] overflow-hidden">
+      <Header/>
+      <div className="relative h-[40vh] md:h-[59vh] overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
           src={blog.image} 
-          alt={blog.title} 
+          alt={blog.title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 z-20 flex items-center justify-center">
+        <div className="absolute inset-0 z-20 mt-10 flex items-center justify-center">
           <div className="container px-4">
             <Link 
               href="/#blog" 
@@ -57,24 +59,27 @@ const BlogPage = () => {
               <div className="flex items-center justify-between border-b border-gray-100 pb-6 mb-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-gray-200 rounded-full overflow-hidden flex items-center justify-center">
-                    <img src="/assets/cuba_profile_pic.png" className="h-full" />
+                    <img src={blog.author.pic} className="h-full" alt={blog.author.nome} />
                   </div>
                   <div>
-                    <div className="font-semibold">{blog.author}</div>
+                    <div className="font-semibold">{blog.author.nome}</div>
                     <div className="text-sm text-gray-500 flex items-center gap-2">
                       <Calendar size={14} /> {blog.date}
                     </div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Button variant="outline" size="icon">
+                  <Button variant="outline" size="icon" onClick={() => {
+                    if (navigator.share) {
+                      navigator.share({
+                        title: blog.title,
+                        text: 'Confira este artigo no blog!',
+                        url: typeof window !== 'undefined' ? window.location.href : '',
+                      }).catch((error) => console.error('Erro ao compartilhar:', error));
+                    } else {
+                      alert('Seu navegador não suporta compartilhamento.');
+                    }}}>
                     <Share2 size={18} />
-                  </Button>
-                  <Button variant="outline" size="icon">
-                    <Heart size={18} />
-                  </Button>
-                  <Button variant="outline" size="icon">
-                    <Bookmark size={18} />
                   </Button>
                 </div>
               </div>
@@ -147,11 +152,11 @@ const BlogPage = () => {
               <h3 className="text-lg font-bold mb-4 text-white">Sobre o Autor</h3>
               <div className="flex flex-col items-center text-center">
                 <div className="w-20 h-[72px] bg-gray-200 rounded-full overflow-hidden mb-4 flex items-center justify-center">
-                  <img src="/assets/cuba_profile_pic.png" className="w-full h-full text-gray-500" />
+                  <img src={blog.author.pic} className="w-full h-full text-gray-500" alt="Cuba foto perfil" />
                 </div>
-                <h4 className="font-semibold text-white">{blog.author}</h4>
+                <h4 className="font-semibold text-white">{blog.author.nome}</h4>
                 <p className="text-sm text-gray-700 mt-2">
-                  {blog.author === "Gleidson Cuba" 
+                  {blog.author.nome === "Gleidson Cuba" 
                     ? "Personal Trainer com mais de 10 anos de experiência em treinamento físico e esportivo." 
                     : "Nutricionista especializado em nutrição esportiva e emagrecimento saudável."}
                 </p>

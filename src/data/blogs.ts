@@ -6,7 +6,7 @@ export const blogs = [
       category: "Técnicas",
       author: "Gleidson Cuba",
       date: "28 Abr 2025",
-      image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      image: "https://images.unsplash.com/photo-1581009137042-c552e485697a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       content: `
         <h2>Por que treinar até a falha pode ser benéfico?</h2>
         
@@ -44,9 +44,9 @@ export const blogs = [
       title: "Dicas para potencializar seus resultados",
       excerpt: "Cuidar do seu corpo não é luxo, é prioridade. Descubra estratégias comprovadas para maximizar seus ganhos e otimizar seu desempenho físico.",
       category: "Dicas",
-      author: "Allan Nutricionista",
+      author: "Gleidson Cuba",
       date: "25 Abr 2025",
-      image: "https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       content: `
         <h2>Estratégias essenciais para transformar seu corpo e saúde</h2>
         
@@ -92,7 +92,7 @@ export const blogs = [
       category: "Metodologia",
       author: "Gleidson Cuba",
       date: "20 Abr 2025",
-      image: "https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       content: `
         <h2>A eterna dúvida: duração versus intensidade nos treinos</h2>
         
@@ -144,7 +144,7 @@ export const blogs = [
       category: "Treino Outdoor",
       author: "Gleidson Cuba",
       date: "15 Abr 2025",
-      image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      image: "https://images.unsplash.com/photo-1502224562085-639556652f33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       content: `
         <h2>A natureza como seu ginásio: guia completo para treinos ao ar livre</h2>
         

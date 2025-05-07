@@ -22,7 +22,7 @@ const BlogPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-900 to-white">
       {/* Header Image */}
       <div className="relative h-[40vh] md:h-[50vh] overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
@@ -53,11 +53,11 @@ const BlogPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 -mt-12 relative z-30">
           {/* Main Content */}
           <div className="md:col-span-8 lg:col-span-9">
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-gradient-to-br text-white from-black via-red-700 to-blue-800 rounded-xl shadow-lg p-8">
               <div className="flex items-center justify-between border-b border-gray-100 pb-6 mb-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-gray-200 rounded-full overflow-hidden flex items-center justify-center">
-                    <User size={24} className="text-gray-500" />
+                    <img src="/assets/cuba_profile_pic.png" className="h-full" />
                   </div>
                   <div>
                     <div className="font-semibold">{blog.author}</div>
@@ -87,16 +87,16 @@ const BlogPage = () => {
               <div className="border-t border-gray-100 mt-12 pt-8">
                 <h3 className="text-xl font-bold mb-4">Tags</h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="bg-gray-100 hover:bg-gray-200 transition-colors px-3 py-1 rounded-full text-sm">
+                  <span className="bg-gray-400 hover:bg-gray-200 hover:text-black transition-colors px-3 py-1 rounded-full text-sm">
                     Fitness
                   </span>
-                  <span className="bg-gray-100 hover:bg-gray-200 transition-colors px-3 py-1 rounded-full text-sm">
+                  <span className="bg-gray-400 hover:bg-gray-200 hover:text-black transition-colors px-3 py-1 rounded-full text-sm">
                     Treino
                   </span>
-                  <span className="bg-gray-100 hover:bg-gray-200 transition-colors px-3 py-1 rounded-full text-sm">
+                  <span className="bg-gray-400 hover:bg-gray-200 hover:text-black transition-colors px-3 py-1 rounded-full text-sm">
                     Saúde
                   </span>
-                  <span className="bg-gray-100 hover:bg-gray-200 transition-colors px-3 py-1 rounded-full text-sm">
+                  <span className="bg-gray-400 hover:bg-gray-200 hover:text-black transition-colors px-3 py-1 rounded-full text-sm">
                     {blog.category}
                   </span>
                 </div>
@@ -143,19 +143,19 @@ const BlogPage = () => {
           {/* Sidebar */}
           <aside className="md:col-span-4 lg:col-span-3 space-y-8">
             {/* About Author */}
-            <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
-              <h3 className="text-lg font-bold mb-4">Sobre o Autor</h3>
+            <div className="bg-gradient-to-b from-blue-900 to-white rounded-xl shadow-sm p-6 border border-gray-100">
+              <h3 className="text-lg font-bold mb-4 text-white">Sobre o Autor</h3>
               <div className="flex flex-col items-center text-center">
-                <div className="w-20 h-20 bg-gray-200 rounded-full overflow-hidden mb-4 flex items-center justify-center">
-                  <User size={32} className="text-gray-500" />
+                <div className="w-20 h-[72px] bg-gray-200 rounded-full overflow-hidden mb-4 flex items-center justify-center">
+                  <img src="/assets/cuba_profile_pic.png" className="w-full h-full text-gray-500" />
                 </div>
-                <h4 className="font-semibold">{blog.author}</h4>
-                <p className="text-sm text-gray-600 mt-2">
+                <h4 className="font-semibold text-white">{blog.author}</h4>
+                <p className="text-sm text-gray-700 mt-2">
                   {blog.author === "Gleidson Cuba" 
                     ? "Personal Trainer com mais de 10 anos de experiência em treinamento físico e esportivo." 
                     : "Nutricionista especializado em nutrição esportiva e emagrecimento saudável."}
                 </p>
-                <Button className="mt-4 bg-cuba-red hover:bg-red-700 text-white w-full">
+                <Button className="mt-4 text-gray-800 hover:text-white bg-cuba-red hover:bg-red-700 w-full">
                   Ver Perfil
                 </Button>
               </div>
@@ -215,7 +215,7 @@ const BlogPage = () => {
                   placeholder="Seu melhor e-mail"
                   className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-cuba-red"
                 />
-                <Button className="bg-cuba-red hover:bg-red-700 text-white w-full">
+                <Button className="bg-cuba-red text-gray-800 hover:bg-red-700 hover:text-white w-full">
                   Inscrever-se
                 </Button>
               </div>
@@ -225,7 +225,7 @@ const BlogPage = () => {
       </div>
       
       {/* CTA Section */}
-      <div className="bg-gray-50 py-16 mt-16">
+      <div className="bg-mainRed py-16 mt-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Pronto para transformar seu corpo e saúde?</h2>
@@ -233,12 +233,8 @@ const BlogPage = () => {
               Conheça nossos planos personalizados e comece sua jornada fitness com o acompanhamento profissional que você merece!
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-cuba-red hover:bg-red-700 text-white">
-                <Link href="/#plans">Ver Planos</Link>
-              </Button>
-              <Button variant="outline">
-                <Link href="/#contact">Falar com um Personal</Link>
-              </Button>
+                <Link className="bg-white w-[200px] h-10 rounded-xl flex justify-center items-center text-black hover:bg-mainBlue hover:text-white" href="/planos">Ver Planos</Link>
+                <Link href="https://wa.me/5512981359114" className="bg-mainBlue text-white hover:text-black hover:bg-mainRed w-[200px] h-10 rounded-xl flex justify-center items-center">Falar com um Personal</Link>
             </div>
           </div>
         </div>

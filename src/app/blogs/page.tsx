@@ -3,45 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/app/components/ui/pagination";
 import { Calendar, User, Dumbbell } from "lucide-react";
 import Header from '@/app/components/header/Header'
-
-const blogs = [
-  {
-    id: 1,
-    title: "Treinar até a falha: 5 motivos para adotar essa técnica",
-    excerpt: "Treinar até a falha (quando você não consegue executar mais repetições com boa forma) pode ser uma estratégia útil em certos contextos. Abaixo estão 5 motivos pelos quais alguns atletas ou praticantes de musculação adotam essa técnica.",
-    category: "Técnicas",
-    author: "Gleidson Cuba",
-    date: "28 Abr 2025",
-    image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-  },
-  {
-    id: 2,
-    title: "Dicas para potencializar seus resultados",
-    excerpt: "Cuidar do seu corpo não é luxo, é prioridade. Descubra estratégias comprovadas para maximizar seus ganhos e otimizar seu desempenho físico.",
-    category: "Dicas",
-    author: "Allan Nutricionista",
-    date: "25 Abr 2025",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-  },
-  {
-    id: 3,
-    title: "Treino longo e moderado ou curto e intenso?",
-    excerpt: "Qual abordagem de treino é mais eficiente para seus objetivos? Analisamos os prós e contras de cada método para ajudar você a tomar a melhor decisão.",
-    category: "Metodologia",
-    author: "Gleidson Cuba",
-    date: "20 Abr 2025",
-    image: "https://images.unsplash.com/photo-1599058917765-a780eda07a3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-  },
-  {
-    id: 4,
-    title: "Treino ao ar livre: transforme qualquer lugar em academia",
-    excerpt: "Transforme parques, praças, ou qualquer lugar aberto em seu novo 'gym'. Dicas e exercícios completos para treinar com eficiência sem precisar de equipamentos sofisticados.",
-    category: "Treino Outdoor",
-    author: "Gleidson Cuba",
-    date: "15 Abr 2025",
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-  }
-];
+import { blogs } from '@/data/blogs'
 
 const Blogs = () => {
   return (

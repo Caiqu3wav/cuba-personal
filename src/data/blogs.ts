@@ -12,31 +12,38 @@ export const blogs = [
     date: "28 Abr 2025",
     image: "https://images.unsplash.com/photo-1581009137042-c552e485697a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     content: `
-      <h2>Por que treinar até a falha pode ser benéfico?</h2>
-      
-      <p>Treinar até a falha muscular é uma técnica avançada de treinamento onde você continua realizando repetições até que seja fisicamente incapaz de completar mais uma com a forma técnica adequada. Embora não seja recomendada para iniciantes ou em todas as sessões, existem benefícios específicos que podem justificar sua inclusão estratégica em um programa de treinamento.</p>
-      
-      <h3>1. Estímulo máximo para hipertrofia muscular</h3>
-      <p>Treinar até a falha pode recrutar mais fibras musculares (incluindo as de contração rápida), aumentando o estresse mecânico no músculo. Isso potencializa a quebra de proteínas musculares, o que, aliado à nutrição adequada, favorece o crescimento muscular.</p>
-      
-      <h3>2. Melhora da resistência muscular localizada</h3>
-      <p>Ao levar o músculo à exaustão, você força adaptações metabólicas, como aumento da capacidade de armazenamento de glicogênio e tolerância ao acúmulo de metabólitos (ex.: lactato), o que melhora a resistência em exercícios prolongados.</p>
-      
-      <h3>3. Liberação hormonal anabólica</h3>
-      <p>O esforço extremo estimula a liberação de hormônios como o GH (hormônio do crescimento) e testosterona, que estão associados à recuperação e ao ganho de massa muscular. Porém, esse efeito é temporário e varia entre indivíduos.</p>
-      
-      <h3>4. Eficiência em treinos curtos</h3>
-      <p>Para quem tem pouco tempo, treinar até a falha em poucas séries pode ser uma forma de maximizar o estímulo sem precisar de muitas repetições, economizando tempo (principalmente em exercícios isolados, como rosca direta ou extensão de perna).</p>
-      
-      <h3>5. Desenvolvimento mental e superação</h3>
-      <p>A prática constante de ir até o limite fortalece a disciplina e a conexão mente-músculo, ajudando a superar barreiras psicológicas. Isso pode ser útil em fases específicas de preparação física ou competição.</p>
-      
-      <h2>Considerações importantes</h2>
-      <ul>
-        <li><strong>Riscos:</strong> A falha muscular aumenta o risco de lesões (se a técnica for comprometida) e pode levar ao overtraining se usada em excesso.</li>
-        <li><strong>Periodização:</strong> Deve ser aplicada estrategicamente, preferencialmente em exercícios isolados ou em fases específicas do treino.</li>
-        <li><strong>Não é para todos:</strong> Iniciantes ou pessoas com restrições articulares devem evitar, priorizando a execução correta e o controle do movimento.</li>
-      </ul>
+    <h2>Treinar até a falha: Benefícios e Cuidados</h2>
+
+    <p>Treinar até a falha muscular consiste em repetir um exercício até que não seja mais possível completá-lo com boa forma. Embora não seja ideal para todos os dias, essa técnica pode ser valiosa quando usada com estratégia.</p>
+
+    <h3 class="text-lg font-semibold mt-6 mb-2">5 motivos para considerar treinar até a falha:</h3>
+    <ol class="list-decimal pl-6 space-y-1">
+      <li>
+        <strong>Estímulo máximo para hipertrofia muscular:</strong> Recruta fibras de contração rápida, intensificando a quebra muscular e promovendo crescimento com a devida recuperação.
+      </li>
+      <li>
+        <strong>Melhora da resistência muscular:</strong> Aumenta a tolerância a metabólitos como o lactato, essencial para exercícios prolongados.
+      </li>
+      <li>
+        <strong>Maior liberação hormonal anabólica:</strong> Estimula hormônios como GH e testosterona, auxiliando na recuperação e crescimento muscular.
+      </li>
+      <li>
+        <strong>Eficiência em treinos curtos:</strong> Ideal para quem tem pouco tempo — maior estímulo com menos volume de treino.
+      </li>
+      <li>
+        <strong>Desenvolvimento mental:</strong> Fortalece a mente e a determinação, útil em fases de preparação intensa.
+      </li>
+    </ol>
+
+    <h3 class="text-lg font-semibold mt-6 mb-2">Cuidados e recomendações:</h3>
+    <ul class="list-disc pl-6 space-y-1">
+      <li><strong>Evite o excesso:</strong> usar essa técnica com muita frequência pode levar ao overtraining.</li>
+      <li><strong>Prefira exercícios isolados:</strong> como rosca direta, onde a falha oferece menos risco.</li>
+      <li><strong>Atenção à técnica:</strong> nunca sacrifique a forma pela quantidade de repetições.</li>
+      <li><strong>Evite se for iniciante:</strong> priorize o aprendizado da execução e da progressão.</li>
+    </ul>
+
+    <p class="mt-4">Incluir a falha muscular no seu treino pode ser transformador quando feito com inteligência. Busque orientação profissional e escute seu corpo.</p>
     `
   },
   {
@@ -51,40 +58,27 @@ export const blogs = [
     date: "25 Abr 2025",
     image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     content: `
-      <h2>Consistência: A Chave do Sucesso nos Treinos</h2>
-      
-      <p>Para alcançar resultados verdadeiramente transformadores, é necessário adotar uma abordagem completa que vai além dos treinos ocasionais. Aqui estão os pilares fundamentais para potencializar seus resultados e garantir progresso contínuo.</p>
-      
-      <h3>Consistência é a chave para o progresso</h3>
-      <p>Estabeleça uma rotina de treinos e respeite-a. Os resultados significativos não vêm de esforços esporádicos, mas sim da disciplina contínua e do comprometimento com seus objetivos. Mesmo pequenas ações diárias, quando mantidas ao longo do tempo, geram transformações extraordinárias.</p>
-      
-      <h3>Nutrição estratégica</h3>
-      <p>Consuma uma dieta balanceada rica em proteínas, carboidratos complexos e gorduras saudáveis. Lembre-se que os suplementos podem ajudar, mas a alimentação natural deve ser a base da sua nutrição. A alimentação adequada é responsável por aproximadamente 70% dos seus resultados.</p>
-      
-      <h3>Sono reparador</h3>
-      <p>O sono é crucial para a recuperação muscular. Procure dormir entre 7 a 9 horas por noite para otimizar a síntese proteica, a liberação hormonal e a regeneração dos tecidos. Durante o sono profundo ocorre grande parte do processo de recuperação e crescimento muscular.</p>
-      
-      <h3>Hidratação constante</h3>
-      <p>Beba bastante água ao longo do dia para manter seu corpo funcionando corretamente e ajudar na recuperação. A hidratação adequada influencia diretamente o desempenho muscular, a regulação da temperatura corporal e o transporte de nutrientes para as células.</p>
-      
-      <h3>Variação de estímulos</h3>
-      <p>Mude sua rotina de treinos regularmente para evitar a estagnação e trabalhar diferentes grupos musculares. Seu corpo é extremamente adaptável, e a variação periódica dos exercícios, intensidades e volumes é essencial para continuar progredindo.</p>
-      
-      <h3>Princípio da progressão de carga</h3>
-      <p>Para continuar vendo resultados, aumente gradualmente o peso ou a intensidade dos exercícios que você está realizando. Esta progressão sistemática é fundamental para forçar novas adaptações musculares e evitar platôs.</p>
-      
-      <h3>Recuperação adequada</h3>
-      <p>Faça pausas adequadas entre as séries de exercícios para permitir a recuperação muscular. Lembre-se que o crescimento acontece durante o descanso, não durante o treino. Respeite os períodos de recuperação entre treinos de mesmo grupo muscular.</p>
-      
-      <h3>Técnica perfeita</h3>
-      <p>Execute os exercícios com a técnica correta para evitar lesões e maximizar os benefícios. A qualidade do movimento sempre deve prevalecer sobre a quantidade de peso ou repetições. Priorize a execução perfeita antes de aumentar cargas.</p>
-      
-      <h3>Objetivos claros</h3>
-      <p>Estabeleça objetivos específicos e mensuráveis para manter-se motivado e focado. Divida suas metas em etapas alcançáveis e celebre cada conquista, por menor que pareça. Objetivos bem definidos dão direção ao seu esforço.</p>
-      
-      <h3>Escute seu corpo</h3>
-      <p>Respeite os sinais do seu corpo. Se sentir dor ou desconforto persistente (diferente da fadiga normal do treino), ajuste seus exercícios ou procure orientação profissional. Saiba diferenciar a dor do crescimento muscular da dor de uma potencial lesão.</p>
-    `
+    <h2>Otimize seu Desempenho com Hábitos Poderosos</h2>
+
+    <p>Potencializar seus resultados exige mais do que esforço físico — envolve estratégias complementares que aceleram e sustentam o progresso. Confira os pilares essenciais:</p>
+
+    <h3 class="text-lg font-semibold mt-6 mb-2">Fundamentos para resultados sólidos:</h3>
+    <ul class="list-disc pl-6 space-y-1">
+      <li><strong>Consistência:</strong> treinar com regularidade é o fator mais determinante para a evolução.</li>
+      <li><strong>Nutrição estratégica:</strong> priorize comida de verdade, com foco em proteína, fibras e gorduras boas.</li>
+      <li><strong>Sono de qualidade:</strong> dormir bem é essencial para regeneração muscular e hormonal.</li>
+      <li><strong>Hidratação:</strong> beba água ao longo do dia para manter o desempenho e recuperação.</li>
+      <li><strong>Variação de estímulos:</strong> mude os exercícios e intensidades para continuar evoluindo.</li>
+      <li><strong>Progressão de carga:</strong> aumente gradualmente os desafios para forçar adaptação.</li>
+      <li><strong>Recuperação:</strong> respeite o tempo de descanso entre treinos intensos.</li>
+      <li><strong>Técnica perfeita:</strong> foco na execução correta para evitar lesões e otimizar o treino.</li>
+      <li><strong>Metas bem definidas:</strong> objetivos claros ajudam a manter a motivação em alta.</li>
+      <li><strong>Escute seu corpo:</strong> diferencie a dor do progresso da dor de alerta. Ajuste quando necessário.</li>
+    </ul>
+
+    <p class="mt-4">Treinar é importante, mas a combinação de bons hábitos fora da academia é o que realmente transforma seu físico e sua performance.</p>
+    <p class="font-medium mt-2">Cuide do básico com excelência. Os resultados virão como consequência.</p>
+  `
   },
   {
     id: 3,
@@ -102,7 +96,7 @@ export const blogs = [
       
       <p>Uma das questões mais debatidas entre praticantes de atividade física é sobre qual abordagem traz melhores resultados: treinos longos com intensidade moderada ou treinos curtos e extremamente intensos. Vamos analisar cada opção para ajudar você a escolher a estratégia ideal para seus objetivos.</p>
       
-      <div class="bg-gray-50 p-4 rounded-lg my-6">
+      <div class="p-4 rounded-lg my-6">
         <h3 class="flex items-center text-xl font-bold mb-3">
           <span class="mr-2">💪</span> Treinos longos e moderados
         </h3>
@@ -116,7 +110,7 @@ export const blogs = [
         </ul>
       </div>
 
-      <div class="bg-gray-50 p-4 rounded-lg my-6">
+      <div class="p-4 rounded-lg my-6">
         <h3 class="flex items-center text-xl font-bold mb-3">
           <span class="mr-2">💪</span> Treinos curtos e intensos (HIT)
         </h3>
@@ -139,7 +133,7 @@ export const blogs = [
         <li class="mb-2">Alternar entre períodos focados em volume (treinos mais longos) e períodos focados em intensidade (treinos mais curtos) ao longo dos meses.</li>
       </ul>
 
-      <div class="bg-cuba-red/10 border-l-4 border-cuba-red p-4 rounded-r-lg my-6">
+      <div class=" border-l-4 border-cuba-red p-4 rounded-r-lg my-6">
         <p class="font-bold flex items-center mb-2">
           <span class="mr-2">👉</span> Não esqueça: qualidade > quantidade
         </p>
@@ -184,35 +178,35 @@ export const blogs = [
         <ol class="list-decimal pl-6 space-y-3 mt-3">
           <li>
             <strong>15 agachamentos</strong>
-            <p class="text-sm text-gray-600">Posicione os pés na largura dos ombros, desça como se fosse sentar em uma cadeira imaginária, mantendo o peito erguido.</p>
+            <p class="text-sm text-gray-300">Posicione os pés na largura dos ombros, desça como se fosse sentar em uma cadeira imaginária, mantendo o peito erguido.</p>
           </li>
           <li>
             <strong>10 flexões de braço</strong>
-            <p class="text-sm text-gray-600">Mantenha o corpo em linha reta, da cabeça aos calcanhares. Modifique apoiando os joelhos se necessário.</p>
+            <p class="text-sm text-gray-300">Mantenha o corpo em linha reta, da cabeça aos calcanhares. Modifique apoiando os joelhos se necessário.</p>
           </li>
           <li>
             <strong>20 avanços (10 por perna)</strong>
-            <p class="text-sm text-gray-600">Dê um passo à frente e desça até que ambos os joelhos formem ângulos de 90°. Alterne as pernas.</p>
+            <p class="text-sm text-gray-300">Dê um passo à frente e desça até que ambos os joelhos formem ângulos de 90°. Alterne as pernas.</p>
           </li>
           <li>
             <strong>15 abdominais remador</strong>
-            <p class="text-sm text-gray-600">Sentado, eleve as pernas e tronco simultaneamente, formando um "V" com o corpo.</p>
+            <p class="text-sm text-gray-300">Sentado, eleve as pernas e tronco simultaneamente, formando um "V" com o corpo.</p>
           </li>
           <li>
             <strong>10 burpees</strong>
-            <p class="text-sm text-gray-600">Do agachamento para a posição de prancha, faça uma flexão, volte ao agachamento e salte com os braços acima.</p>
+            <p class="text-sm text-gray-300">Do agachamento para a posição de prancha, faça uma flexão, volte ao agachamento e salte com os braços acima.</p>
           </li>
           <li>
             <strong>30 segundos de prancha isométrica</strong>
-            <p class="text-sm text-gray-600">Apoie-se nos antebraços e nas pontas dos pés, mantendo o corpo em linha reta e abdômen contraído.</p>
+            <p class="text-sm text-gray-300">Apoie-se nos antebraços e nas pontas dos pés, mantendo o corpo em linha reta e abdômen contraído.</p>
           </li>
           <li>
             <strong>15 tríceps no banco ou mureta</strong>
-            <p class="text-sm text-gray-600">De costas para o apoio, mãos apoiadas, desça o corpo flexionando os cotovelos e suba estendendo-os.</p>
+            <p class="text-sm text-gray-300">De costas para o apoio, mãos apoiadas, desça o corpo flexionando os cotovelos e suba estendendo-os.</p>
           </li>
           <li>
             <strong>20 perdigueiros (10 por lado, alternando)</strong>
-            <p class="text-sm text-gray-600">Na posição de quatro apoios, estenda o braço direito e a perna esquerda simultaneamente, depois alterne.</p>
+            <p class="text-sm text-gray-300">Na posição de quatro apoios, estenda o braço direito e a perna esquerda simultaneamente, depois alterne.</p>
           </li>
         </ol>
         <p class="mt-4 font-medium">Descanso: 1 minuto completo entre cada volta do circuito.</p>

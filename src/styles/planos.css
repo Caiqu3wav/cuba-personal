@@ -2,6 +2,13 @@
     width: 300px;
 }
 
+.bg-gif {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/gymbg.webp');
+    background-size: cover;
+    background-position: center;
+}
+
 @media screen and (max-width: 900px) {
     .planos-cards{
         width: 230px;

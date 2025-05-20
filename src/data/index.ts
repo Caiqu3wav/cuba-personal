@@ -14,3 +14,27 @@ descr: "Explore as fundações do desenvolvimento de software com nosso blog ded
 imagem: "/assets/img/code-analize.webp", dataLnc: '2024/02/07', link: "/goodcode"
 },
 ];
+
+const planFeatures = {
+    consultoria: [
+      "Avaliação física online",
+      "Planilha de treinos personalizada",
+      "Suporte via WhatsApp",
+      "Ajustes mensais",
+      "App exclusivo para acompanhamento"
+    ],
+    personal: [
+      "Avaliação física completa",
+      "Treinos presenciais",
+      "Acompanhamento exclusivo",
+      "Relatórios de progresso semanais",
+      "Acesso ao app exclusivo"
+    ],
+    blackfit: [
+      "Tudo do plano Personal Trainer",
+      "Acompanhamento nutricional completo",
+      "Plano alimentar personalizado",
+      "Ajustes semanais de treino e dieta",
+      "Suporte prioritário 24/7"
+    ]
+  };

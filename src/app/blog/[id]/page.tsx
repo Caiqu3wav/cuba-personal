@@ -3,7 +3,7 @@ import { useParams } from "next/navigation";
 import Link from 'next/link'
 import { Button } from "@/app/components/ui/button";
 import { blogs } from "@/data/blogs";
-import { ArrowLeft, Calendar, Share2, Bookmark, Dumbbell } from "lucide-react";
+import { ArrowLeft, Calendar, Share2, Dumbbell } from "lucide-react";
 import Header from '@/app/components/header/Header'
 
 const BlogPage = () => {
@@ -17,7 +17,7 @@ const BlogPage = () => {
       <div className="container bg-red-600 mx-auto px-4 py-24 text-center">
         <h1 className="text-3xl font-bold mb-6">Artigo não encontrado</h1>
         <Button asChild className="bg-cuba-red hover:bg-red-700 text-white">
-          <Link href="/#blog">Voltar para Blog</Link>
+          <Link href="/blogs">Voltar para Blog</Link>
         </Button>
       </div>
     );
@@ -159,10 +159,7 @@ const BlogPage = () => {
                   {blog.author.nome === "Gleidson Cuba" 
                     ? "Personal Trainer com mais de 10 anos de experiência em treinamento físico e esportivo." 
                     : "Nutricionista especializado em nutrição esportiva e emagrecimento saudável."}
-                </p>
-                <Button className="mt-4 text-gray-800 hover:text-white bg-cuba-red hover:bg-red-700 w-full">
-                  Ver Perfil
-                </Button>
+                </p> 
               </div>
             </div>
             

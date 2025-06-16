@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Header from "./components/header/Header"
 import Hero from "./components/hero/Hero"
-import AboutPersonal from "./components/aboutpersonal/AboutPersonal";
+import About2 from "./components/aboutpersonal/About2";
 import About from './components/about/About';
 import ScrollButton from './components/ScrollButton';
 import Footer from './components/footer/Footer';
@@ -14,7 +14,7 @@ export default function Home() {
      <Header/>
      <Hero/>
      <div className="w-full h-fit bg-gradient-to-b from-black via-red-600 to-blue-900">
-     <AboutPersonal/>
+     <About2/>
       <About/>
       <Tecnofit/>
       <Planos/>

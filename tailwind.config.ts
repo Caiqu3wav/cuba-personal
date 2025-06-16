@@ -15,6 +15,12 @@ const config: Config = {
         "mainRed": "#dc2626",
       },
       screens:{
+      lowMobile: '440px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
         'major': {'max': '1260px'},
         'major1': {'max': '1240px'},
         'majortwo': {'max': '1235px'},

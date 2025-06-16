@@ -22,7 +22,7 @@ const BlogSection = () => {
               <Card key={blog.id} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="aspect-video relative overflow-hidden">
                   <img 
-                    src={blog.image} 
+                    src={blog.image}
                     alt={blog.title}
                     className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
                   />

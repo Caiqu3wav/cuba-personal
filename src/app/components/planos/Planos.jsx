@@ -20,7 +20,6 @@ export default function Planos() {
     <div id="planos" className="pb-4 h-fit  flex flex-col items-center justify-center w-full">
       <h1 className="text-[40px] font-light text-white">PLANOS</h1>
       <hr className=" border-solid border-blue-600 rounded-lg border-2 border-x-[300px]" />
-
       <div className="w-full flex mt-4 justify-around gap-6 flex-wrap">
         <div className="planos-cards bg-slate-300 w-[300px] h-fit transition-all duration-400 
                 hover:scale-125 cursor-pointer flex flex-col gap-1 items-center justify-center text-black rounded-lg py-4 px-3">

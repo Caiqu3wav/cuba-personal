@@ -16,7 +16,7 @@ export default function Footer(){
             </div>
             <div className="flex mr-[6.5rem] midtwo:mr-[2.5rem] midfour:mr-[5rem] midfour1:mr-0 midfour1:self-center midtwo4:mr-0 flex-col gap-1 items-center justify-center">
                 <Image src={CubaLogo} className="w-[80px]" alt="logo cuba" />
-                <p className="font-semibold majorthree:text-[11px]">Copyright © 2024 - Todos os direitos reservados.</p>
+                <p className="font-semibold majorthree:text-[11px]">© 2025 Cuba Personal. Todos os direitos reservados..</p>
                 <div className="majorfour2:text-xs hidden midfour:block"><p>Contato</p>
             <p>Telefone: (12)98135-9114</p>
             <p>Email: rsantosgleidson@gmail.com</p>

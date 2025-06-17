@@ -16,17 +16,13 @@ export default function Header(){
             {
                 title: 'HOME',
                 path: '/',
-            },
-            {
-                title: 'PERSONAL',
-                path: '#personal',
-            },
+            }, 
             {
                 title: 'SOBRE',
                 path: '#about',
             },
             {
-                title: 'CONSULTORIA',
+                title: 'PLANOS',
                 path: '#planos',
             },
             {

@@ -5,9 +5,7 @@ import Treino from "../../../../public/assets/consultoriaonlinepresencial.jpg"
 import BfImg from "../../../../public/assets/blackfitpic.jpg"
 import GymLogo from '../../../../public/assets/img/gymlogo.png'
 import { AiOutlineGlobal } from "react-icons/ai"
-import { useLayoutEffect } from "react"
-import { gsap } from 'gsap'
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { IoMdInformationCircleOutline } from "react-icons/io";
 import Link from "next/link"
 import "../../../styles/planos.css"
 import { IoMdCheckmarkCircleOutline } from "react-icons/io"
@@ -35,9 +33,15 @@ export default function Planos() {
                   </li>
               ))}
             </ul>
-            <Link className="w-[70%]" href="https://wa.me/5512981359114?text=Olá%2C+gostaria+de+saber+mais+sobre+a+consultoria+online!">
-            <button className=" w-[100%] text-[17px] py-2 rounded-lg bg-black text-white transition-all duration-700
-            hover:bg-white hover:text-black text-nowrap">Consultar Plano</button>
+            <Link className="w-[70%]" href="/plano/consultoria">
+            <button className="flex justify-center gap-2 items-center bg-mainBlue w-[100%] text-[17px] py-2 rounded-lg text-white transition-all duration-700
+            hover:bg-white hover:text-black text-nowrap">
+              <IoMdInformationCircleOutline/>
+              Ver Sobre</button>
+            </Link>
+            <Link className="w-[70%] flex gap-2" href="https://wa.me/5512981359114?text=Olá%2C+gostaria+de+saber+mais+sobre+a+consultoria+online!">
+            <button className="bg-mainRed w-[100%] text-[17px] py-2 rounded-lg text-white transition-all duration-700
+            hover:bg-white hover:text-black text-nowrap">Entrar em contato</button>
             </Link>
           </div>
         </div>
@@ -58,10 +62,16 @@ export default function Planos() {
                   </li>
               ))}
             </ul>
-            <Link href="https://wa.me/5512981359114?text=Olá%2C+gostaria+de+saber+mais+sobre+seus+serviços!"
-              className="w-[70%]">
-              <button className="w-full text-[17px] py-2 rounded-lg bg-black text-white transition-all duration-700
-                         hover:bg-white hover:text-black">Consultar Plano</button></Link>
+            <Link className="w-[70%]" href="/plano/personal">
+            <button className="flex justify-center gap-2 items-center bg-mainBlue w-[100%] text-[17px] py-2 rounded-lg text-white transition-all duration-700
+            hover:bg-white hover:text-black text-nowrap">
+              <IoMdInformationCircleOutline/>
+              <span>Ver Sobre</span></button>
+            </Link>
+            <Link className="w-[70%] flex gap-2" href="https://wa.me/5512981359114?text=Olá%2C+gostaria+de+saber+mais+sobre+a+consultoria+online!">
+            <button className="bg-mainRed w-[100%] text-[17px] py-2 rounded-lg text-white transition-all duration-700
+            hover:bg-white hover:text-black text-nowrap">Entrar em contato</button>
+            </Link>
           </div>
         </div>
         <div className="relative planos-cards w-[300px] bg-gradient-to-r h-fit from-black to-slate-800 text-black transition-all 
@@ -84,9 +94,16 @@ export default function Planos() {
                   </li>
               ))}
             </ul>
+            <Link className="w-[70%]" href="plano/blackfit">
+            <button className="flex justify-center gap-2 items-center bg-black w-[100%] text-[17px] py-2 rounded-lg text-white transition-all duration-700
+            hover:bg-white hover:text-black text-nowrap">
+              <IoMdInformationCircleOutline/>
+              <span>Ver Sobre</span></button>
+            </Link>
             <Link href="https://wa.me/5512981359114?text=Olá%2C+gostaria+de+saber+mais+sobre+o+plano+completo+BlackFit+personal+e+nutricionista!"
               className="w-[70%] text-[17px] py-2 rounded-lg bg-yellow-400 text-black transition-all duration-700
                          hover:bg-white hover:text-black">Consultar Plano</Link>
+                         
                          </div>
         </div>
       </div>

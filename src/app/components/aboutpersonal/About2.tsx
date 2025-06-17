@@ -7,7 +7,7 @@ import { Trophy, Award, Users } from "lucide-react";
 
 export default function About2()  {
   return (
-    <section id="sobre" className="section-padding">
+    <section id="about" className="section-padding">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-between pt-4">
           <div className="order-1 lg:order-2 flex flex-col items-center justify-center">
@@ -37,7 +37,7 @@ export default function About2()  {
             <Button className="bg-blue-900 hover:bg-red-700 text-white px-8">Converse Comigo</Button>
           </div>
           
-          <div className="order-1 lg:order-2 relative ml-[20%]">
+          <div className="order-1 lg:order-2 flex flex-col items-center justify-center relative mt-4">
             <div className="aspect-ratio-1/1 flex items-center justify-center w-fit relative">
               <Image 
                 src={RunPic} 
@@ -53,15 +53,11 @@ export default function About2()  {
                 <p className="text-gray-600">alunos transformados</p>
               </div>
             </div>
-          </div>
-        </div>
-        
-        {/* Racing Results Section */}
-        <div className="mt-20 pt-10 border-t text-white border-gray-100">
+            <div className="mt-20 pt-10 border-t text-white border-gray-100">
           <h2 className="text-3xl font-bold mb-8 text-center">Resultados nas Competições</h2>
           
-          <div className="grid grid-cols-1 text-black md:grid-cols-3 gap-8">
-            <div className="bg-white  rounded-lg p-6 shadow-md border border-gray-100 text-center">
+          <div className="grid grid-cols-1 text-black md:grid-cols-3 gap-4">
+            <div className="bg-white flex flex-col items-center rounded-lg p-6 shadow-md border border-gray-100 text-center">
               <div className="flex justify-center mb-4">
                 <Trophy className="h-12 w-12 text-cuba-red" />
               </div>
@@ -94,14 +90,20 @@ export default function About2()  {
               </p>
             </div>
           </div>
-          
+        </div>
+      </div>
+    </div>
+  </div>
+    
+        {/* Racing Results Section */}
+        <div className="mt-20 pt-10 border-t text-white border-gray-100">
+          <h2 className="text-3xl font-bold mb-8 text-center">Resultados nas Competições</h2>         
           <div className="mt-10 text-center">
             <p className="text-lg text-gray-500 italic mb-4">
               &quot;O diferencial do treinamento com o Cuba é a preparação técnica e mental para competições. Meu filho melhorou drasticamente seu desempenho em apenas 6 meses de treino.&quot;
             </p>
             <p className="font-medium">— Renata S., mãe de atleta juvenil</p>
           </div>
-        </div>
       </div>
     </section>
   );

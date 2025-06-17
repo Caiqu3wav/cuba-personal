@@ -24,7 +24,10 @@ export default function Planos() {
           <Image src={Consult} className="transition-all rounded-md w-[90%] h-[255px] duration-700  hover:opacity-75" alt="" />
           <div className="flex flex-col items-center justify-between text-[22px] gap-2 font-semibold text-center h-fit">
             <h1 className="flex items-center gap-2"><span className="">Consultoria Online</span> <AiOutlineGlobal className="text-blue-600" /> </h1>
-            <button className="px-14 rounded-xl bg-red-300/60 text-red-500 text-[15px] font-bold py-1">R$ 199/mês</button>
+            <div className="flex flex-col gap-3 items-center justify-center">
+              <p className="text-sm text-gray-500">A Partir:</p>
+            <button className="px-14 rounded-xl bg-red-300/60 text-red-500 text-[15px] font-bold py-1">R$ 249,99/mês</button>
+            </div>
             <ul className="space-y-3 text-[15px]">
               {planos.consultoria.map((feature, index) => (
                 <li key={index} className="flex items-start gap-1">
@@ -52,8 +55,10 @@ export default function Planos() {
             <h1 className="flex items-center gap-2"><span className="">Personal Trainer</span> 
             <Image src={GymLogo} className="w-[30px]" alt="gym logo" />
             </h1>
-                        <button className="px-14 rounded-xl bg-red-300/60 text-[15px] text-red-500 font-bold py-1">R$ 299/mês</button>
-
+            <div className="flex flex-col gap-3 items-center justify-center">
+              <p className="text-sm text-gray-500">A Partir:</p>
+                        <button className="px-14 rounded-xl bg-red-300/60 text-[15px] text-red-500 font-bold py-1">R$ 319,99/mês</button>
+            </div>
             <ul className="space-y-3 text-[15px]">
               {planos.personal.map((feature, index) => (
                 <li key={index} className="flex items-center gap-1">
@@ -85,7 +90,7 @@ export default function Planos() {
               </div>
             <h1 className="">Plano BlackFit ⭐</h1>
             <p className="text-sm text-gray-600">O melhor dos dois mundos</p>
-                        <button className="px-14 rounded-xl text-[15px] bg-gray-400/60 text-white font-bold py-1">R$ 449/mês</button>
+                        <button className="px-14 rounded-xl text-[15px] bg-gray-400/60 text-white font-bold py-1">R$ 599/mês</button>
             <ul className="space-y-3 text-lg">
               {planos.blackfit.map((feature, index) => (
                 <li key={index} className="flex items-center text-center">

@@ -11,9 +11,9 @@ export default function About2()  {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-between pt-4">
           <div className="order-1 lg:order-2 flex flex-col items-center justify-center">
-            <div className="text-yellow-100  uppercase tracking-wider font-semibold mb-2">Conheça o seu trainer</div>
+            <div className="text-white  uppercase tracking-wider font-semibold mb-2">Conheça o seu trainer</div>
             <Image src={CubaPic} className="w-44 rounded-3xl" alt="cuba personal"/>
-            <h2 className="text-2xl lowMobile:text-4xl text-yellow-100 font-bold mb-6">Gleidson Roberto dos Santos</h2>
+            <h2 className="text-2xl lowMobile:text-4xl text-white font-bold mb-6">Gleidson Roberto dos Santos</h2>
             <p className="text-gray-400 underline mb-4 text-lg">
               CREF: 126111-G/SP • Guaratinguetá - SP
             </p>
@@ -34,7 +34,7 @@ export default function About2()  {
               </p>
             </div>
             
-            <Button className="bg-blue-900 hover:bg-red-700 text-white px-8">Converse Comigo</Button>
+            <a href="https://wa.me/5512981359114" className="rounded-2xl py-3 bg-blue-900 hover:bg-red-700 text-white px-16">Converse Comigo</a>
           </div>
           
           <div className="order-1 lg:order-2 flex flex-col items-center justify-center relative mt-4">
@@ -45,11 +45,11 @@ export default function About2()  {
                 className="rounded-lg w-[450px] shadow-2xl object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-xl">
-                <p className="font-bold text-cuba-red text-lg">+10 anos</p>
+                <p className="font-bold text-mainRed text-lg">+10 anos</p>
                 <p className="text-gray-600">de experiência</p>
               </div>
               <div className="absolute -top-6 -right-6 bg-white p-4 rounded-lg shadow-xl">
-                <p className="font-bold text-cuba-red text-lg">+500</p>
+                <p className="font-bold text-mainRed text-lg">+500</p>
                 <p className="text-gray-600">alunos transformados</p>
               </div>
             </div>
@@ -59,10 +59,10 @@ export default function About2()  {
           <div className="grid grid-cols-1 text-black md:grid-cols-3 gap-4">
             <div className="bg-white flex flex-col items-center rounded-lg p-6 shadow-md border border-gray-100 text-center">
               <div className="flex justify-center mb-4">
-                <Trophy className="h-12 w-12 text-cuba-red" />
+                <Trophy className="h-12 w-12 text-mainRed" />
               </div>
               <h3 className="text-xl font-bold mb-2">Atletas no Pódio</h3>
-              <p className="text-4xl font-bold text-cuba-red mb-2">78</p>
+              <p className="text-4xl font-bold text-mainRed mb-2">78</p>
               <p className="text-gray-500">
                 Atletas treinados que subiram ao pódio em competições nos últimos 3 anos
               </p>
@@ -70,10 +70,10 @@ export default function About2()  {
             
             <div className="bg-white rounded-lg p-6 shadow-md border border-gray-100 text-center">
               <div className="flex justify-center mb-4">
-                <Award className="h-12 w-12 text-cuba-red" />
+                <Award className="h-12 w-12 text-mainRed" />
               </div>
               <h3 className="text-xl font-bold mb-2">Competições</h3>
-              <p className="text-4xl font-bold text-cuba-red mb-2">45+</p>
+              <p className="text-4xl font-bold text-mainRed mb-2">45+</p>
               <p className="text-gray-600">
                 Eventos esportivos arbitrados ou com alunos participantes anualmente
               </p>
@@ -81,10 +81,10 @@ export default function About2()  {
             
             <div className="bg-white rounded-lg p-6 shadow-md border border-gray-100 text-center">
               <div className="flex justify-center mb-4">
-                <Users className="h-12 w-12 text-cuba-red" />
+                <Users className="h-12 w-12 text-mainRed" />
               </div>
               <h3 className="text-xl font-bold mb-2">Categorias</h3>
-              <p className="text-4xl font-bold text-cuba-red mb-2">Todas</p>
+              <p className="text-4xl font-bold text-mainRed mb-2">Todas</p>
               <p className="text-gray-500">
                 De crianças a adultos, do iniciante ao avançado, preparação completa para competições
               </p>
@@ -99,7 +99,7 @@ export default function About2()  {
         <div className="mt-20 pt-10 border-t text-white border-gray-100">
           <h2 className="text-3xl font-bold mb-8 text-center">Resultados nas Competições</h2>         
           <div className="mt-10 text-center">
-            <p className="text-lg text-gray-500 italic mb-4">
+            <p className="text-lg text-gray-400 font-semibold italic mb-4">
               &quot;O diferencial do treinamento com o Cuba é a preparação técnica e mental para competições. Meu filho melhorou drasticamente seu desempenho em apenas 6 meses de treino.&quot;
             </p>
             <p className="font-medium">— Renata S., mãe de atleta juvenil</p>

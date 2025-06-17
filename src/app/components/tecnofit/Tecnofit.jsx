@@ -62,7 +62,7 @@ export default function Tecnofit() {
             <h1 className="btn-shine2 text-xl midfour:text-2xl font-semibold border-solid 
      border-b-4 border-black midtwo2:text-base low:text-lg">ACOMPANHAMENTO NUTRICIONAL</h1>
           </div>
-          <ul className="flex mt-2 justify-center midtwo2:text-xs midtwo2:ml-4 low:ml-10 flex-col text-start space-y-2">
+          <ul className="flex mt-2 justify-center text-sm lg:text-lg ml-[15%] lg:ml-[5%] flex-col text-start space-y-2">
             <li className="flex items-center gap-2">
               <FaCheckCircle className="text-green-500" /> Avaliação Física
             </li>
@@ -83,7 +83,7 @@ export default function Tecnofit() {
             </li>
           </ul>
 
-          <Link href="#planos"><button className="py-2 px-4 rounded-xl bg-green-500 mt-3 text-black hover:bg-mainBlue
+          <Link href="/planos"><button className="py-2 px-4 rounded-xl bg-green-500 mt-3 text-black hover:bg-mainBlue
           hover:text-white transition-all duration-500">ESCOLHA SEU PLANO</button></Link>
         </div>
       </div>

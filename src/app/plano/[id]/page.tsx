@@ -48,7 +48,7 @@ export default function Plano({ params }: Props) {
   const planDetails = {
     consultoria: {
       name: "Consultoria Online",
-      price: "R$ 199/mês",
+      price: "R$ 249/mês",
       description: "Treinos personalizados para seu ritmo, onde quer que você esteja",
       features: [
         "Avaliação física online completa",
@@ -100,7 +100,7 @@ export default function Plano({ params }: Props) {
     },
     blackfit: {
       name: "Plano BlackFit ⭐",
-      price: "R$ 799/mês",
+      price: "R$ 699/mês",
       description: "O plano completo que combina treino personalizado e nutrição para resultados extraordinários",
       features: [
         "Tudo do plano Personal Trainer",
@@ -134,8 +134,8 @@ export default function Plano({ params }: Props) {
       <div className="min-h-screen bg-white">
         <Header />
         <div className="pt-32 pb-16 text-center">
-          <h1 className="text-4xl font-bold text-cuba-black mb-4">Plano não encontrado</h1>
-          <p className="text-gray-600">O plano solicitado não existe.</p>
+          <h1 className="text-4xl font-bold text-white mb-4">Plano não encontrado</h1>
+          <p className="text-gray-500">O plano solicitado não existe.</p>
         </div>
         <Footer />
       </div>
@@ -159,36 +159,36 @@ export default function Plano({ params }: Props) {
                 </div>
               )}
             </div>
-            <h1 className="text-5xl font-bold mb-4 text-cuba-black">{currentPlan.name}</h1>
-            <p className="text-xl text-gray-600 mb-6">{currentPlan.description}</p>
-            <div className="text-4xl font-bold text-cuba-red mb-8">{currentPlan.price}</div>
+            <h1 className="text-5xl font-bold mb-4 text-white">{currentPlan.name}</h1>
+            <p className="text-xl text-gray-500 mb-6">{currentPlan.description}</p>
+            <div className="text-4xl font-bold text-mainRed mb-8">{currentPlan.price}</div>
           </div>
 
           {/* Personal Training Plans */}
           {isPersonal && (
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-center mb-8 text-cuba-black">Opções de Planos</h2>
+              <h2 className="text-3xl font-bold text-center mb-8 text-blue-800">Opções de Planos</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {personalPlans.map((plan, index) => (
                   <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardHeader className="text-center pb-2">
-                      <CardTitle className="text-xl text-cuba-red">{plan.name}</CardTitle>
+                      <CardTitle className="text-xl text-black">{plan.name}</CardTitle>
                       <CardDescription>{plan.sessions}</CardDescription>
                     </CardHeader>
                     <CardContent className="text-center">
                       <div className="mb-2">
-                        <span className="text-sm text-gray-600">{plan.frequency}</span>
+                        <span className="text-sm text-gray-500 font-semibold">{plan.frequency}</span>
                       </div>
                       <div className="mb-2">
-                        <span className="text-lg font-semibold text-cuba-black">{plan.pricePerSession}/aula</span>
+                        <span className="text-lg font-semibold text-white">{plan.pricePerSession}/aula</span>
                       </div>
-                      <div className="text-2xl font-bold text-cuba-red">{plan.totalPrice}/mês</div>
+                      <div className="text-2xl font-bold text-mainRed">{plan.totalPrice}/mês</div>
                     </CardContent>
                   </Card>
                 ))}
               </div>
               <div className="text-center mt-6">
-                <p className="text-gray-600">
+                <p className="text-gray-500">
                   <strong>Hora aula individual:</strong> R$ 40,00
                 </p>
               </div>
@@ -200,7 +200,7 @@ export default function Plano({ params }: Props) {
             <Card className="bg-white shadow-lg">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl">
-                  <CheckCircle className="h-6 w-6 text-cuba-red" />
+                  <CheckCircle className="h-6 w-6 text-mainRed" />
                   O que está incluído
                 </CardTitle>
               </CardHeader>
@@ -208,8 +208,8 @@ export default function Plano({ params }: Props) {
                 <ul className="space-y-4">
                   {currentPlan.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-cuba-red mr-3 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{feature}</span>
+                      <CheckCircle className="h-5 w-5 text-mainRed mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-600">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -220,7 +220,7 @@ export default function Plano({ params }: Props) {
             <Card className="bg-white shadow-lg">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl">
-                  <Target className="h-6 w-6 text-cuba-red" />
+                  <Target className="h-6 w-6 text-mainRed" />
                   Principais Benefícios
                 </CardTitle>
               </CardHeader>
@@ -229,7 +229,7 @@ export default function Plano({ params }: Props) {
                   {currentPlan.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start">
                       <Trophy className="h-5 w-5 text-yellow-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{benefit}</span>
+                      <span className="text-gray-600">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -241,7 +241,7 @@ export default function Plano({ params }: Props) {
           <Card className="bg-gray-50 shadow-lg mt-12">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-2xl text-center">
-                <Users className="h-6 w-6 text-cuba-red" />
+                <Users className="h-6 w-6 text-mainRed" />
                 Ideal para você se:
               </CardTitle>
             </CardHeader>
@@ -249,8 +249,8 @@ export default function Plano({ params }: Props) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {currentPlan.idealFor.map((item, index) => (
                   <div key={index} className="flex items-center bg-white p-4 rounded-lg">
-                    <CheckCircle className="h-5 w-5 text-cuba-red mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">{item}</span>
+                    <CheckCircle className="h-5 w-5 text-mainRed mr-3 flex-shrink-0" />
+                    <span className="text-gray-600">{item}</span>
                   </div>
                 ))}
               </div>
@@ -260,10 +260,10 @@ export default function Plano({ params }: Props) {
           {/* CTA */}
           <div className="text-center mt-12">
             <div className="bg-cuba-red/5 rounded-2xl p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold mb-4 text-cuba-black">
+              <h3 className="text-2xl font-bold mb-4 text-white">
                 Pronto para começar sua transformação?
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-400 mb-6">
                 Entre em contato agora e agende sua primeira sessão. Vamos juntos alcançar seus objetivos!
               </p>
               <a href={`${isPremium ? 'https://wa.me/5512981359114?text=Olá%2C+gostaria+de+saber+mais+sobre+o+plano+completo+BlackFit+personal+e+nutricionista!'
@@ -274,7 +274,7 @@ export default function Plano({ params }: Props) {
                   size="lg" 
                   className={`${isPremium 
                     ? 'bg-yellow-400 hover:bg-yellow-500 text-black' 
-                    : 'bg-cuba-red hover:bg-red-700 text-white'
+                    : 'bg-blue-800 hover:bg-red-700 text-white'
                   } px-8 py-3 text-lg font-semibold`}
                 >
                   <Calendar className="h-5 w-5 mr-2" />

@@ -9,7 +9,7 @@ const Blogs = () => {
   return (
     <section id="blog" className="section-padding bg-mainBlue">
       <Header/>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 py-5">
         <div className="text-center mt-20 max-w-3xl mx-auto mb-16">
           <div className="text-white uppercase tracking-wider font-semibold mb-2">Conhecimento & Dicas</div>
           <h2 className="text-4xl font-bold text-mainRed mb-6">Blog Fitness</h2>
@@ -53,7 +53,7 @@ const Blogs = () => {
               </CardContent>
               
               <CardFooter>
-                <Button variant="link" className="text-cuba-red p-0 hover:text-red-700">
+                <Button variant="link" className="text-mainRed p-0 hover:text-red-700">
                   <a href={`/blog/${blog.id}`} className="flex items-center gap-2">
                     Ler mais <span className="text-lg">→</span>
                   </a>

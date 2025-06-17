@@ -23,11 +23,11 @@ export default function Header(){
             },
             {
                 title: 'PLANOS',
-                path: '#planos',
+                path: '/planos',
             },
             {
                 title: 'BLOGS',
-                path: '/blogs',
+                path: '#blogs',
             },
         ]
 

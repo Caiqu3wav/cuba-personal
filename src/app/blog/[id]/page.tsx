@@ -85,7 +85,7 @@ const BlogPage = () => {
               </div>
               
               <div 
-                className="prose prose-lg max-w-none prose-headings:text-gray-800 prose-headings:font-bold prose-p:text-gray-600 prose-a:text-cuba-red prose-a:no-underline hover:prose-a:underline prose-strong:text-cuba-red prose-img:rounded-xl"
+                className="prose prose-lg max-w-none prose-headings:text-gray-800 prose-headings:font-bold prose-p:text-gray-600 prose-a:text-mainRed prose-a:no-underline hover:prose-a:underline prose-strong:text-mainRed prose-img:rounded-xl"
                 dangerouslySetInnerHTML={{ __html: blog.content }}
               />
               
@@ -130,7 +130,7 @@ const BlogPage = () => {
                           />
                         </div>
                         <div className="p-5">
-                          <h4 className="font-bold text-lg mb-2 group-hover:text-cuba-red transition-colors">
+                          <h4 className="font-bold text-lg mb-2 group-hover:text-mainRed transition-colors">
                             {relatedBlog.title}
                           </h4>
                           <div className="flex items-center text-sm text-gray-500">
@@ -169,31 +169,31 @@ const BlogPage = () => {
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="flex items-center justify-between group">
-                    <span className="text-gray-700 group-hover:text-cuba-red transition-colors">Técnicas</span>
+                    <span className="text-gray-700 group-hover:text-mainRed transition-colors">Técnicas</span>
                     <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full">8</span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="flex items-center justify-between group">
-                    <span className="text-gray-700 group-hover:text-cuba-red transition-colors">Dicas</span>
+                    <span className="text-gray-700 group-hover:text-mainRed transition-colors">Dicas</span>
                     <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full">12</span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="flex items-center justify-between group">
-                    <span className="text-gray-700 group-hover:text-cuba-red transition-colors">Metodologia</span>
+                    <span className="text-gray-700 group-hover:text-mainRed transition-colors">Metodologia</span>
                     <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full">5</span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="flex items-center justify-between group">
-                    <span className="text-gray-700 group-hover:text-cuba-red transition-colors">Treino Outdoor</span>
+                    <span className="text-gray-700 group-hover:text-mainRed transition-colors">Treino Outdoor</span>
                     <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full">7</span>
                   </a>
                 </li>
                 <li>
                   <a href="#" className="flex items-center justify-between group">
-                    <span className="text-gray-700 group-hover:text-cuba-red transition-colors">Nutrição</span>
+                    <span className="text-gray-700 group-hover:text-mainRed transition-colors">Nutrição</span>
                     <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full">14</span>
                   </a>
                 </li>

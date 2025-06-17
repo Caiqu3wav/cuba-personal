@@ -27,7 +27,7 @@ export default function Hero() {
             w-[500px] midtwo3:w-[400px] low:w-[350px] mr-4">
                 <div className="flex flex-col">
                     <div className="flex flex-col items-center text-center">
-                    <Image className="w-[200px] midtwo3:w-[120px] midfour1:w-[85px] rounded-full self-center " 
+                    <Image className="w-[40%] rounded-full self-center " 
                     src={cubaPic1} alt="cuba personal"/>
                     <Image src={GymLogo} className="gymlogo self w-[40px]" alt="gym logo"/>
                     <h1 className="hero-content-h1 underline majortwo4:text-xl">CONSULTORIA CUBA PERSONAL</h1>

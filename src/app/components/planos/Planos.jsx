@@ -20,7 +20,7 @@ export default function Planos() {
       <hr className=" border-solid border-blue-600 rounded-lg border-2 border-x-[300px]" />
       <div className="w-full flex mt-4 justify-around gap-6 flex-wrap">
         <div className="planos-cards bg-slate-300 w-[300px] h-fit transition-all duration-400 
-                hover:scale-125 cursor-pointer flex flex-col gap-1 items-center justify-center text-black rounded-lg py-4 px-3">
+                  cursor-pointer flex flex-col gap-1 items-center justify-center text-black rounded-lg py-4 px-3">
           <Image src={Consult} className="transition-all rounded-md w-[90%] h-[255px] duration-700  hover:opacity-75" alt="" />
           <div className="flex flex-col items-center justify-between text-[22px] gap-2 font-semibold text-center h-fit">
             <h1 className="flex items-center gap-2"><span className="">Consultoria Online</span> <AiOutlineGlobal className="text-blue-600" /> </h1>
@@ -49,7 +49,7 @@ export default function Planos() {
           </div>
         </div>
         <div className="planos-cards bg-slate-300 text-black flex flex-col items-center w-[300px] h-fit transition-all duration-400 
-                hover:scale-125 cursor-pointer border-2 border-red-600 rounded-lg py-4 px-3">
+                 cursor-pointer border-2 border-red-600 rounded-lg py-4 px-3">
           <Image src={Treino} className="transition-all rounded-md w-[90%] h-[255px] duration-700 hover:opacity-75" alt="" />
           <div className="flex flex-col items-center gap-2 text-[22px] font-semibold text-black text-center h-fit">
             <h1 className="flex items-center gap-2"><span className="">Personal Trainer</span> 
@@ -80,7 +80,7 @@ export default function Planos() {
           </div>
         </div>
         <div className="relative planos-cards w-[300px] bg-gradient-to-r h-fit from-black to-slate-800 text-black transition-all 
-        duration-400 hover:scale-125 cursor-pointer flex flex-col items-center  rounded-lg py-4 px-3">
+        duration-400 cursor-pointer flex flex-col items-center  rounded-lg py-4 px-3">
           <Image src={BfImg} className="transition-all rounded-md w-[90%] h-[255px] duration-700 hover:opacity-75 " alt="" />
           <div className="flex flex-col items-center gap-2 text-[22px] font-semibold text-white text-center h-fit">
                   <div className="absolute -top-4 left-0 right-0 flex justify-center">
